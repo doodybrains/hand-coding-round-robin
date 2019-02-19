@@ -1,7 +1,8 @@
 # hand coding round robin
 *workshopping a workshop where students will learn how to hand code a web page*
 
-## learning objective
+## what is this??
+this is a 1 hour workshop where a group of students will learn how to hand code a web page. they will also learn how to do this kind of coding slowly and with care. equal attention will be given to html elements, css styles, and the content on the page. through adding and styling the content of each others web pages students will learn the basic building blocks of web development as well as what it means to code while paying close attention to accessibility and the code written by the people before and after them
 
 ## preparation
 _Note: You will need your own computer to participate in this workshop. We will be switching seats and working on each others computers so you should also be comfortable with someone else using your computer. We will only be working within one file in a text editor and it will already be opened by the time another student sits down at your computer._
