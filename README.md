@@ -11,23 +11,32 @@ _Note: You will need your own computer to participate in this workshop. We will 
 3. Move it to your desktop so that it is easily accessible to you and other students
 
 ## schedule
-`0:00 - 0:10` introduction + short lecture
+`0:00 - 0:10` 
+introduction + short lecture
 
-`0:10 - 0:20` first html elements, students will be prompted to write title inside of an h1 tag and a short text inside of an h2 tag
+`0:10 - 0:20` 
+first html elements, students will be prompted to write title inside of an h1 tag and a short text inside of an h2 tag
   
-`0:20 - 0:25` students move down two seats, introduce p tag
+`0:20 - 0:25` 
+students move down two seats, introduce p tag
   
-`0:25 - 0:30` students move down two seats, introduce img tag
+`0:25 - 0:30` 
+students move down two seats, introduce img tag
   
-`0:30 - 0:35` students move down two seats, introduce ul and li tags 
+`0:30 - 0:35` 
+students move down two seats, introduce ul and li tags 
   
-`0:35 - 0:40` students move down one seats, style 1-2 elements
+`0:35 - 0:40` 
+students move down one seat, style 1-2 elements
   
-`0:40 - 0:45` students move down one seats, style 1-2 elements
+`0:40 - 0:45` 
+students move down one seat, style 1-2 elements
   
-`0:45 - 0:50` students move down one seats, style 1-2 element
+`0:45 - 0:50` 
+students move down one seat, style 1-2 element
   
-`0:50 - 0:50` student sharing, outroduction
+`0:50 - 0:60` 
+student sharing, outroduction
 
 ## reading + references
 
@@ -35,6 +44,7 @@ _Note: You will need your own computer to participate in this workshop. We will 
 
 [Olia Lialina || A Vernacular Web](http://art.teleportacia.org/observation/vernacular/welcome/)
 
+[sfpc code societies || student archive](http://sfpc.io/codesocieties_students)
 
 ## post-workshop resources
 
