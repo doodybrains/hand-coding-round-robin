@@ -12,37 +12,37 @@ _Note: You will need your own computer to participate in this workshop. We will 
 3. Move it to your desktop so that it is easily accessible to you and other students
 
 ## schedule
-  `0:00 - 0:05`
+`0:00 - 0:05`
 
-    introduction to workshop, what is hand coding?
+introduction to workshop, what is hand coding?
 
-  `0:05 - 0:10`
+`0:05 - 0:10`
 
-    present prompt, create h1 tag with a class name, add css style to h1 tag
+present prompt, create h1 tag with a class name, add css style to h1 tag
 
-  `0:10 - 0:15`
+`0:10 - 0:15`
 
-    move down one seat, write a short response to the h1 tag inside of a p tag, think about the subtext of the phrase, create p tag with class, add styles
+move down one seat, write a short response to the h1 tag inside of a p tag, think about the subtext of the phrase, create p tag with class, add styles
 
-  `0:15 - 0:20`
+`0:15 - 0:20`
 
-    move down one seat, find an image on the internet in response to the p tag, create image tag with class name
+move down one seat, find an image on the internet in response to the p tag, create image tag with class name
 
-  `0:20 - 0:30`
+`0:20 - 0:30`
 
-    move down one seat, add css styles to the image tag, use position absolute, add another image if you have time
+move down one seat, add css styles to the image tag, use position absolute, add another image if you have time
 
-  `0:30 - 0:45`
+`0:30 - 0:45`
 
-    spend time adding more styles to the existing elements, look carefully at the code, move things around, introduce javascript
+spend time adding more styles to the existing elements, look carefully at the code, move things around, introduce javascript
 
-  `0:45 - 0:50`
+`0:45 - 0:50`
 
-    return to your computer, add another p tag with a short response to the response someone wrote earlier, style this p tag so that it looks different from the other ones
+return to your computer, add another p tag with a short response to the response someone wrote earlier, style this p tag so that it looks different from the other ones
 
-  `0:50 - 0:60`
-  
-    optional sharing, post-workshop notes
+`0:50 - 0:60`
+
+optional sharing, post-workshop notes
 
 ## reading + references
 
