@@ -12,41 +12,37 @@ _Note: You will need your own computer to participate in this workshop. We will 
 3. Move it to your desktop so that it is easily accessible to you and other students
 
 ## schedule
-`0:00 - 0:10` 
+  `0:00 - 0:05`
 
-introduction + short lecture
+    introduction to workshop, what is hand coding?
 
-`0:10 - 0:20` 
+  `0:05 - 0:10`
 
-first html elements, students will be prompted to write title inside of an h1 tag and a short text inside of an h2 tag
+    present prompt, create h1 tag with a class name, add css style to h1 tag
+
+  `0:10 - 0:15`
+
+    move down one seat, write a short response to the h1 tag inside of a p tag, think about the subtext of the phrase, create p tag with class, add styles
+
+  `0:15 - 0:20`
+
+    move down one seat, find an image on the internet in response to the p tag, create image tag with class name
+
+  `0:20 - 0:30`
+
+    move down one seat, add css styles to the image tag, use position absolute, add another image if you have time
+
+  `0:30 - 0:45`
+
+    spend time adding more styles to the existing elements, look carefully at the code, move things around, introduce javascript
+
+  `0:45 - 0:50`
+
+    return to your computer, add another p tag with a short response to the response someone wrote earlier, style this p tag so that it looks different from the other ones
+
+  `0:50 - 0:60`
   
-`0:20 - 0:25` 
-
-students move down two seats, introduce p tag
-  
-`0:25 - 0:30` 
-
-students move down two seats, introduce img tag
-  
-`0:30 - 0:35` 
-
-students move down two seats, introduce ul and li tags 
-  
-`0:35 - 0:40` 
-
-students move down one seat, style 1-2 elements
-  
-`0:40 - 0:45` 
-
-students move down one seat, style 1-2 elements
-  
-`0:45 - 0:50` 
-
-students move down one seat, style 1-2 element
-  
-`0:50 - 0:60` 
-
-student sharing, outroduction
+    optional sharing, post-workshop notes
 
 ## reading + references
 
