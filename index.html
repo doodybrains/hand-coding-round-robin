@@ -8,13 +8,12 @@
   </title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <style>
-    /* this is where we make our web pages look cool, write below here */
     html { box-sizing: border-box; }
     *, *:before, *:after { box-sizing: inherit; }
 
     body {
+      cursor: cell;
       font-family: monospace;
       background-color: black;
       color: white;
@@ -22,6 +21,14 @@
       overflow-x: hidden;
       overflow-y: scroll;
       margin: 0;
+    }
+
+    div {
+      background-color: yellow;
+      position: fixed;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
     }
 
     h1 {
@@ -83,12 +90,10 @@
     section em {
       font-size: 1.125em;
     }
-    /* this is where we make our web pages look cool, write above here, add more lines above this line if necessary  */
   </style>
 </head>
 
 <body>
-  <!-- nothing here yet, only write below here -->
   <section class="intro">
     <h1>hand coding round robin</h1>
     <p>
@@ -191,18 +196,33 @@
     <h2>third</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perspiciatis commodi odit nihil, incidunt exercitationem fugiat voluptas molestias tempora, reprehenderit dignissimos? Quaerat impedit eos dolore laboriosam illo ut accusamus iste.</p>
   </section>
-
-
-
-
-  <!-- only write above here, add more lines above this line if necessary -->
 </body>
 
 <script type="application/javascript">
-    // nothing here yet
+  window.addEventListener('load', windowLoaded);
+  var pen = false;
 
+  function windowLoaded() {
+    document.addEventListener('mousemove', mouseMoved);
+    document.addEventListener('keydown', keyDown);
+  }
 
+  function keyDown(e){
+    if (e.key === "Shift") {
+      pen = true;
+    } else if (e.key === "z") {
+      pen = false;
+    }
+  }
 
+  function mouseMoved(e) {
+    const m = document.createElement('div');
+    document.getElementsByTagName('body')[0].append(m);
+
+    if (pen) {
+      m.style.top = `${e.clientY}px`;
+      m.style.left =`${e.clientX}px`;
+    }
+  }
 </script>
-
 </html>
