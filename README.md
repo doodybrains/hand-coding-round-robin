@@ -18,15 +18,15 @@ introduction to workshop, what is hand coding?
 
 `0:05 - 0:10`
 
-present prompt, create h1 tag with a class name, add css style to h1 tag
+present prompt, create h1 tag with an id, add css style to h1 tag
 
 `0:10 - 0:15`
 
-move down one seat, write a short response to the h1 tag inside of a p tag, think about the subtext of the phrase, create p tag with class, add styles
+move down one seat, write a short response to the h1 tag inside of a p tag, think about the subtext of the phrase, create p tag with an id, add styles
 
 `0:15 - 0:20`
 
-move down one seat, find an image on the internet in response to the p tag, create image tag with class name
+move down one seat, find an image on the internet in response to the p tag, create image tag with id
 
 `0:20 - 0:30`
 
