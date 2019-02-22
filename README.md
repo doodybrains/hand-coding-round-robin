@@ -19,6 +19,9 @@ _Note: You will need your own computer to participate in this workshop. We will 
 2. Please download this [file](https://github.com/doodybrains/hand-coding-round-robin/blob/master/pre-workshop-materials/index.html)
 3. Move it to your desktop so that it is easily accessible to you and other students
 
+`here is a gif of how to download the index.html from this repository`
+
+![gif of how to download index.html file](./pre-workshop-materials/how-to-download-index-file.gif)
 
 ## schedule
 
