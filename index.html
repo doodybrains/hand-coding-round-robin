@@ -76,10 +76,10 @@
       }
 
       section code {
-        margin-top: 40px;
+        margin-top: 5px;
         display: block;
         width: 100%;
-        padding: 30px;
+        padding: 10px;
         font-size: 2.5em;
       }
 
@@ -91,8 +91,9 @@
         color: purple;
         font-size: 0.75em;
       }
+
       section strong {
-        font-size: 3em;
+        font-size: 2.5em;
       }
 
       section em {
@@ -163,7 +164,7 @@
         <br>
         0:05 - 0:10
         <br>
-          present prompt, create h1 tag with an id name, add css style to h1 tag
+          introduce css, present prompt, create h1 tag with an id name, add css style to h1 tag
         <br>
         <br>
         0:10 - 0:15
@@ -183,7 +184,7 @@
         <br>
         0:30 - 0:45
         <br>
-          spend time adding more styles to the existing elements, look carefully at the code, move things around, introduce javascipt
+          move down one seat, spend time adding more styles to the existing elements, look carefully at the code, move things around, introduce javascipt
         <br>
         <br>
         0:45 - 0:50
@@ -242,6 +243,19 @@
           <code>
             <span>&lt;h1 id="metaphor"&gt;</span>the world wide web is a big plate of spaghetti and meatballs, with extra parmigiano-reggiano<span>&lt;&sol;h1&gt;</span>
           </code>
+          <br>
+          <br>
+          after you add your metaphor, scroll back up to the CSS section and add some styles to your new element using the metaphor id:
+
+        <pre>
+          #metaphor {<br>
+            font-size: 38px;<br>
+            position: absolute;<br>
+            top: 40px;<br>
+            left: 20px;<br>
+            color: hotpink;
+          }<br>
+        </pre>
         </p>
     </section>
 
@@ -251,13 +265,25 @@
         scroll down and place your cursor somewhere inside the body tag, a few lines below the h1 tag
         <br>
         <br>
-        inside of an <strong>p tag</strong>, please write a short response to the h1 tag phrase, think about the subtext of the metaphor:
+         <strong>div tag</strong> inside of an <strong>p tag</strong>, please write a short response to the h1 tag phrase, think about the subtext of the metaphor:
         <br>
         <br>
-        you should also <strong>add an id</strong>, the name of the id can be anything you want, we will refer to it with css later
+        you should also <strong>add an id</strong>, the name of the id can be anything you want, refer to the id in your css to add styles
        <code>
-         <span>&lt;p id="response"&gt;</span>all of the fiber optic cables are like a big mess of spaghetti, facebook, amazon, google, just a bunch of meatballs, but the sprinkling of hand coded websites on top of it all makes it ok<span>&lt;&sol;p&gt;</span>
+         <span>&lt;div id="response"&gt;</span><br>
+          <span>&lt;p&gt;</span>all of the fiber optic cables are like a big mess of spaghetti, facebook, amazon, google, just a bunch of meatballs, but the sprinkling of hand coded websites on top of it all makes it ok<span>&lt;&sol;p&gt;</span><br>
+        <span>&lt;&sol;div&gt;</span>
        </code>
+
+       <pre>
+         #response {<br>
+           font-size: 48px;<br>
+           color: orangered;<br>
+           transform: rotate(-25deg);<br>
+           background-color: blanchedalmond;<br>
+           border-radius: 50%;<br>
+         }<br>
+       </pre>
       </p>
     </section>
 
@@ -285,7 +311,7 @@
         <br>
         <br>
         <code>
-          <span>&lt;img id="<em>first-image</em>" alt="<em>description of the image</em>" src="<em>http://url-of-image.com</em>"<span>&sol;&gt;</span>
+          <span>&lt;img id="<em>name-of-image-id</em>" alt="<em>description of the image</em>" src="<em>http://url-of-image.com</em>"<span>&sol;&gt;</span>
         </code>
       </p>
     </section>
@@ -302,30 +328,21 @@
         it should look something like this
         <br>
         <br>
-        <pre>
-          #name-of-id {<br>
-            width: 80%<br>
-          }
-        </pre>
-        <br>
-        <br>
-        this css tells your image to take up 80% of the window width
+        the css tells your image to take up 80% of the window width, try out some of the styles like the position and transform rules
         <br>
         <br>
         <strong>save your file</strong> and open it in a browser to see what it looks like
         <br>
         <br>
         now you can add more styles to your image
-        <br>
-        <br>
         <pre>
           #name-of-id {<br>
             width: 80%<br>
             position: absolute;<br>
-            top: 40px;<br>
-            right: 20px;<br>
-            transform: rotate(30deg);<br>
-          }<br>
+            top: 80px;<br>
+            right: 10px;<br>
+            transform: rotate(-20deg);<br>
+          }
         </pre>
       </p>
     </section>
@@ -355,18 +372,19 @@
         <strong>add one more p tag</strong> to your html, give it a unique id, write a short response to any of the content on the page
         <br>
         <br>
-        add some styles to your new p element, it should look something like this:
+        add some styles to your new p element, it should look something like this, try some of the styles below if you have't already:
         <br>
         <br>
         <pre>
-          #name-of-p-id {<br>
-            font-size: 50px;
+          #name-of-p-id {
+            font-size: 48px;
             color: orangered;
+            transform: rotate(-45deg);
+            background-color: blanchedalmond;
+            border-radius: 50%;
+            word-wrap: break-word;
           }<br>
         </pre>
-        <br>
-        <br>
-        try out position: absolute if you haven't yet!
       </p>
     </section>
   </body>
