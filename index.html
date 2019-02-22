@@ -41,7 +41,7 @@
       section {
         height: 100%;
         position: relative;
-        padding: 8px;
+        padding: 55px 40px 25px 25px;
       }
 
       section.intro {
@@ -53,8 +53,13 @@
       }
 
       section h2 {
-        font-size: 1em;
+        font-size: 2.5em;
+        font-style: italic;
         color: rgb(233, 250, 233);
+        transform: rotate(-15deg);
+        position: absolute;
+        top: -30px;
+        left: 0px;
       }
 
       section p {
@@ -63,7 +68,7 @@
       }
 
       section pre {
-        font-size: 1.5em;
+        font-size: 1em;
         color: springgreen;
         padding: 30px;
         margin: 0 auto;
@@ -82,6 +87,10 @@
         color: orangered;
       }
 
+      section code span em {
+        color: purple;
+        font-size: 0.75em;
+      }
       section strong {
         font-size: 3em;
       }
@@ -128,7 +137,6 @@
         <code>
           <span>&lt;p&gt;</span>ok with that said...<span>&lt;&sol;p&gt;</span>
         </code>
-
       </p>
     </section>
 
@@ -191,7 +199,7 @@
     <section class="workshop">
       <h2>1</h2>
       <p>
-         open the index.html file that you downloaded before this workshop, it should be on your desktop, open it in a text editor like Atom or Sublime. also make sure that you have a webbrowser open in the background so that other students can easily access it when they are one your computer.
+         open the <strong>index.html</strong> file that you downloaded before this workshop, it should be on your desktop, open it in a text editor like Atom or Sublime. also make sure that you have a webbrowser open in the background so that other students can easily access it when they are one your computer.
          <br>
          <br>
          lets look at the css at the top of page, line 16
@@ -214,23 +222,22 @@
     <section class="workshop">
       <h2>2</h2>
         <p>
-           scroll down and place your cursor somewhere inside the body tag, around line 41
-           <br>
-           <br>
-           inside of an h1 tag, please write a sentence or phrase responding to this prompt:
-           <br>
-           <br>
-           <strong>think of a metaphor for the world wide web.</strong> you might write something like: <em>the world wide web is a big plate of spaghetti and meatballs, with extra parmigiano-reggiano</em>
-           <br>
-           <br>
-           make sure to write something that you would want your peers to see
-           <br>
-           <br>
-           and that its something fun for them respond to !
-           <br>
-
+          scroll down and place your cursor somewhere inside the body tag
+          <br>
+          <br>
+          inside of an <strong>h1 tag</strong>, please write a sentence or phrase responding to this prompt:
+          <br>
+          <br>
+          <strong>think of a metaphor for the world wide web.</strong> you might write something like: <em>the world wide web is a big plate of spaghetti and meatballs, with extra parmigiano-reggiano</em>
+          <br>
+          <br>
+          make sure to write something that you would want your peers to see
+          <br>
+          <br>
+          and that its something fun for them respond to !
+          <br>
           <code>
-            <span>&lt;h1&gt;</span>the world wide web is a big plate of spaghetti and meatballs, with extra parmigiano-reggiano<span>&lt;&sol;h1&gt;</span>
+            <span>&lt;h1 id="metaphor"&gt;</span>the world wide web is a big plate of spaghetti and meatballs, with extra parmigiano-reggiano<span>&lt;&sol;h1&gt;</span>
           </code>
         </p>
     </section>
@@ -238,16 +245,125 @@
     <section class="workshop">
       <h2>3</h2>
       <p>
-        scroll down and place your cursor somewhere inside the body tag a few lines below the h1 tag, around line 66
+        scroll down and place your cursor somewhere inside the body tag, a few lines below the h1 tag
         <br>
         <br>
-        inside of an p tag, please write a short response to the phrase inside the h1 tag, think about the subtext of the metaphor:
+        inside of an <strong>p tag</strong>, please write a short response to the h1 tag phrase, think about the subtext of the metaphor:
         <br>
         <br>
-        you should also add an id, the name of the class can be anything you want, we will refer to it with css later
+        you should also <strong>add an id</strong>, the name of the id can be anything you want, we will refer to it with css later
        <code>
-         <span>&lt;p id="response"&gt;</span>all of the fiber optic cables are like a tangle of spaghetti, unfortunately the meatballs are things like facebook and google and amazon, but the sprinking hand coded websites on top of it all makes it ok.<span>&lt;&sol;p&gt;</span>
+         <span>&lt;p id="response"&gt;</span>all of the fiber optic cables are like a big mess of spaghetti, facebook, amazon, google, just a bunch of meatballs, but the sprinkling of hand coded websites on top of it all makes it ok<span>&lt;&sol;p&gt;</span>
        </code>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>4</h2>
+      <p>
+        scroll down and place your cursor somewhere inside the body tag, a few lines below the p tag
+        <br>
+        <br>
+        create an <strong>image tag:</strong>
+        <br>
+        <br>
+        <code>
+          <span>&lt;img id="<em>first-image</em>" alt="<em>description of the image</em>" src=""<span>&sol;&gt;</span>
+        </code>
+        <br>
+        <br>
+        now open a browser window and search for an image in response to the text inside of the p tag
+        <br>
+        <br>
+        <strong>paste the url</strong> for the image <strong>inside of the quotes</strong> after the <strong>src</strong> attribute
+        <br>
+        <br>
+        it should look something like this
+        <br>
+        <br>
+        <code>
+          <span>&lt;img id="<em>first-image</em>" alt="<em>description of the image</em>" src="<em>http://url-of-image.com</em>"<span>&sol;&gt;</span>
+        </code>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>5</h2>
+      <p>
+        <strong>what is the name of the id on the image tag?</strong>
+        <br>
+        <br>
+        scroll up to the css section of the document an create a list of styles for that id
+        <br>
+        <br>
+        it should look something like this
+        <br>
+        <br>
+        <pre>
+          #name-of-id {<br>
+            width: 80%<br>
+          }
+        </pre>
+        <br>
+        <br>
+        this css tells your image to take up 80% of the window width
+        <br>
+        <br>
+        <strong>save your file</strong> and open it in a browser to see what it looks like
+        <br>
+        <br>
+        now you can add more styles to your image
+        <br>
+        <br>
+        <pre>
+          #name-of-id {<br>
+            width: 80%<br>
+            position: absolute;<br>
+            top: 40px;<br>
+            right: 20px;<br>
+            transform: rotate(30deg);<br>
+          }<br>
+        </pre>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>6</h2>
+      <p>
+        take a moment to look at the web page in the browser
+        <br>
+        <br>
+        go back to the index.html file in the text editor and add more html elements or more css styles
+        <br>
+        <br>
+        <strong>try something you didn't have time to do in the last few rounds</strong>
+        <br>
+        <br>
+        if you want you can uncomment the javascript at the bottom of the file, test it out and make changes !
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>7</h2>
+      <p>
+        you should be back at your own computer now
+        <br>
+        <br>
+        <strong>add one more p tag</strong> to your html, give it a unique id, write a short response to any of the content on the page
+        <br>
+        <br>
+        add some styles to your new p element, it should look something like this:
+        <br>
+        <br>
+        <pre>
+          #name-of-p-id {<br>
+            font-size: 50px;
+            color: orangered;
+          }<br>
+        </pre>
+        <br>
+        <br>
+        try out position: absolute if you haven't yet!
       </p>
     </section>
   </body>
