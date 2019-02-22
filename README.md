@@ -8,7 +8,7 @@ they will learn how to do this kind of coding slowly and with care.
 
 equal attention will be given to html elements, css styles, and the content on the page. through adding and styling the content of each others web pages students will learn the basic building blocks of web development as well as what it feels like to code to code with and for each other.
 
-## [link to slides](https://doodybrains.github.io/hand-coding-round-robin)
+[link to slides](https://doodybrains.github.io/hand-coding-round-robin)
 
 ## preparation
 _Note: You will need your own computer to participate in this workshop. We will be switching seats and working on each others computers so you should also be comfortable with someone else using your computer. We will only be working within one file in a text editor and it will already be opened by the time another student sits down at your computer._
