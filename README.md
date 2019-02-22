@@ -21,17 +21,18 @@ _Note: You will need your own computer to participate in this workshop. We will 
 
 
 ## schedule
+
 `0:00 - 0:05`
 
-introduction to workshop, what is hand coding?
+introduction to workshop, what is hand coding?, index.html overview
 
 `0:05 - 0:10`
 
-present prompt, create h1 tag with an id name, add css style to h1 tag
+present prompt, create h1 tag with an id name, using the id add css style to h1 tag
 
 `0:10 - 0:15`
 
-move down one seat, write a short response to the h1 tag inside of a p tag, think about the subtext of the phrase, create p tag with an id, add styles
+move down one seat, write a short response to the metaphor inside of a div inside of a p tag, give an id to the div and add styles
 
 `0:15 - 0:20`
 
@@ -43,11 +44,12 @@ move down one seat, add css styles to the image tag, use position absolute, add 
 
 `0:30 - 0:45`
 
-spend time adding more styles to the existing elements, look carefully at the code, move things around, introduce javascript
+move down one seat, look carefully at the code, what is the subtext of the page? add an h2 element, introduce javascipt
 
 `0:45 - 0:50`
 
-return to your computer, add another p tag with a short response to the response someone wrote earlier, style this p tag so that it looks different from the other ones
+return to your computer, add another p tag with a short response to the response someone wrote earlier, style this p tag so that it looks
+different from the other ones
 
 `0:50 - 0:60`
 
