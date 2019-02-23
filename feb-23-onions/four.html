@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      name of webpage
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: black;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 6px dotted blue;
+        padding: 20px;
+      }
+
+      #metaphor {
+        font-size: 11 px;
+        color: peachpuff;
+      }
+
+      #response {
+        font-size: 30px;
+        color: lightcoral;
+        border: 2px solid turquoise;
+        padding-left: 10px;
+
+      }
+
+      #responseresponse {
+        font-size: 50px;
+        color: hotpink;
+        border: 2px solid hotpink;
+        padding-left: 100px;
+      }
+
+      #first-image{
+        width:200%;
+        margin: 0 auto;
+        display: block;
+        z-index: 30;
+
+      }
+
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body id="body">
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+
+      <h1 id="metaphor">jumbled mess</h1>
+
+      <div id="response">
+        <p>a jumbled *hot* mess</p>
+        <div id="responseresponse">
+          <p>eeeek!</p>
+        </div>
+      </div>
+
+<img alt="this is an image of a drunk barbie doll" src="https://www.dictionary.com/e/wp-content/uploads/2018/07/hot-mess.jpg" id="first-image" />      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+
+    <h2>wtf does yeet mean... </h2>
+  </body>
+
+  <script type="application/javascript">
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+    const metaphor = document.getElementById("metaphor");
+    const response = document.getElementById("response");
+    const firstImage = document.getElementById("first-image");
+    const h2 = document.getElementsByTagName("h2")[0];
+    const body = document.getElementById("body");
+    body.addEventListener('click', function() {
+      metaphor.style.fontSize = "10px";
+      response.style.border = "10px solid mediumpurple";
+      response.style.transform = "rotate(-30deg)";
+      firstImage.style.transform = "rotate(-60deg)";
+      h2.style.position = "absolute";
+      h2.style.top = "20px";
+      h2.style.fontSize = "3em";
+
+
+
+
+    });
+
+    // all javascript above here
+  </script>
+</html>

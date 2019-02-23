@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      name of webpage
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: black;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+#metaphor {
+font-size: 30px;
+text-align: center;
+color: turquoise;
+border: 5px dashed white;
+padding: 30px;
+}
+
+#response {
+  font-size: 25px;
+  text-align: center;
+  color: beige;
+  padding: 30px;
+
+  position:flow;
+  top:80px;
+  left:80px;
+
+}
+
+#first-image{
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  z-index: -1000;
+}
+
+#first-image{
+  /* position: absolute; */
+position: absolute;
+  top: -200px;
+  width: 100%;
+  display: block;
+
+}
+
+      /* write all of your cool css styles above this line  */
+      #zero {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        color: white;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        word-break: break-all;
+        margin: 0;
+        padding: 0;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+      <p id="zero"></p>
+      <h1 id = "metaphor">the world wide web is a tangled ball of yarn</h1>
+        <div id = "response">
+          you want to knit a sweater but keep getting distracted by distracting the cat with the tangled tail of the yarn.
+
+        </div>
+
+        <img alt="gif of a soccer goalie doing sweet things" src="https://media1.tenor.com/images/34ea709476dab0eb3f3c6cb1e9c8c340/tenor.gif" id="first-image">
+
+      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+
+    setInterval(() => {
+        document.getElementById("zero").textContent += Math.random() > 0.5 ? "0" : "1"
+        document.getElementById("zero").style.opacity = Math.random() > 0.5 ? "1.0" : "0.0"
+        document.getElementById("zero").style.color = ["blue", "red", "yellow"][Math.floor(Math.random() * 3)]
+    }, 1000 / 600)
+
+    // const metaphor = document.getElementById("metaphor");
+    // const response = document.getElementById("response");
+    // const firstImage = document.getElementById("first-image");
+    // response.addEventListener('click', function() {
+    //   metaphor.style.fontSize = "80px";
+    //   response.style.border = "10px solid mediumpurple";
+    //   firstImage.style.transform = "rotate(-5deg)";
+    // });
+
+    // all javascript above here
+  </script>
+</html>

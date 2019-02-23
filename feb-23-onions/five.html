@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    name of webpage
+  </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: black;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+      #hair-weasel{
+        font-size: 56pt;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: yellow;
+      }
+
+      #response{
+          background-color: lightskyblue;
+          border: 10px salmon;
+          font-size: 24px;
+          color: orchid;
+          position: absolute; 
+          top: 300px;
+          left: 120px;
+      }
+
+      #firstimage{
+        width: 50%;
+        transform: rotate(-10deg);
+        padding: 90px; 
+      }
+
+      /* write all of your cool css styles above this line  */
+    </style>
+</head>
+
+<body>
+  <div class="handcoding-is-fun">
+    <!-- nothing here yet, only write below here -->
+    <h1 id="hair-weasel">The internet is like the wad of hair and pubes that collects in your shower drain</h1>
+    <div id="response">
+      <p> zuckerberg is the curly long pube that stays there for years, aging silently next to your feet. </p>
+
+    </div>
+
+    <img alt="this is a shower" src="https://media.wired.com/photos/592676467034dc5f91beb80e/master/w_1164,c_limit/MarkZuckerberg.jpg"
+      id="firstimage" />
+    <img alt="this is a mark" src="<img alt=" this is a shower" src="http://images4.alphacoders.com/186/186648.jpg" id="second-image" />
+
+
+    <!-- only write above here, add more space above this line if necessary -->
+  </div>
+</body>
+
+<script type="application/javascript">
+  // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+  const metaphor = document.getElementById("hair-weasel");
+  const response = document.getElementById("response");
+  const firstImage = document.getElementById("first-image");
+  metaphor.addEventListener('click', function () {
+    body.style.opacity = "0.5";
+    metaphor.style.fontSize = "100px";
+    metaphor.style.transform = "rotate(5deg)";
+    response.style.border = "10px solid mediumpurple";
+    firstImage.style.transform = "rotate(-4deg)";
+  });
+
+  // all javascript above here
+</script>
+
+</html>

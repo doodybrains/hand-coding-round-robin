@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      name of webpage
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: black;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+      #metaphor {
+        font-size: 80 px;
+        color:lemonchiffon;
+        border: 10px dotted bisque;
+        padding: 10px;
+
+      }
+
+      #response{
+        font-style: italic;
+        font-size: 1.65em;
+        text-decoration:underline;
+        position: absolute;
+        top:58px;
+        z-index: -1000;
+        width: 100%;
+        text-align: center;
+
+      }
+
+      #dog-criszpy-id{
+        width: 33%;
+        position: absolute;
+        right: 33%;
+        bottom: 200px;
+        z-index: -1;
+        transform: rotate(20deg);
+
+      }
+
+      blockquote {
+        font-style: italic;
+        position: absolute;
+        top: 400px;
+        color:gold;
+      }
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+
+      <h1 id="metaphor"> The world wide web as a crinkled rice crispy </h1>
+
+      <blockquote>
+
+        And remember, Crunchiness is inherently unstable.
+        Given enough time and exposure to the elements,
+        Everything wilts...
+
+      </blockquote>
+
+      <div id="response">
+        <p>do not compromise crunchiness over sweetness </p>
+      </div>
+
+      <img src="https://static1.squarespace.com/static/5478a301e4b0ac0fb959b93a/586a9d8df7e0ab61f648a2e2/586a9e88893fc03b14f5f7f8/1483382411994/FullSizeRender_3.jpg?format=1500w" id="dog-criszpy-id" alt="this is a photo of a rice crispy treat  that looks like a dog, or maybe i am lying to you"/>
+
+
+
+
+
+
+      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+    const dog = document.getElementById("dog-criszpy-id");
+    const response = document.getElementById("response");
+    const firstImage = document.getElementById("first-image");
+    response.addEventListener('click', function() {
+      dog.style.transform.rotate="40deg";
+      response.style.border = "10px solid mediumpurple";
+      firstImage.style.transform = "rotate(-5deg)";
+    });
+
+    // all javascript above here
+  </script>
+</html>

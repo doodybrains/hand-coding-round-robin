@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      name of webpage
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: black;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+      #metaphor {
+        transform: rotate(180deg);
+        font-family: "Papyrus";
+      }
+
+      #response {
+
+        color: WHITE;
+        position: absolute;
+        top: 280px;
+        left: 80px;
+        font-size: 32px;
+        transform: rotate(230deg);
+        z-index: 15;
+      }
+
+      #firstImage{
+        width:50%;
+        position: fixed;
+        left: 10px;
+        z-index: 10;
+
+      }
+
+      #secondImage{
+        width:50%;
+        position: fixed;
+        right: 10px;
+        top: 500px;
+
+      }
+
+      #tutorial {
+        position: fixed;
+        right: 10px;
+        top: 1400px;
+        z-index: 2;
+      }
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+      <h1 id="metaphor">the world wide web is a recently sat-on park bench</h1>
+
+      <div id="response">
+        <p>As with a park bench, you can't be sure of who sat before you and what their hygeine standards were. You gotta be careful out there! (And don't get me started on the pigeons...)</p>
+      </div>
+
+      <img alt="this is a photo of a chair held together by wood sticks"src="https://www.artinamericamagazine.com/wp-content/uploads/2009/11/img-allan-wexler_110011403017.jpg" id="firstImage"/>
+
+      <img alt="this is a photo of a chair conntected to another chair" src="https://hyperallergic.com/wp-content/uploads/2017/03/Wexler-Interchange-2008-A-720x478.jpg" id="secondImage"/>
+
+
+
+<div id = "tutorial">
+
+<p>
+<a href="https://www.familyhandyman.com/woodworking/projects/how-to-build-a-bench/view-all/">how to build a bench</a> </p>
+
+  </div>
+
+      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    let deg = 0
+    setInterval(() => {
+      deg += 30 % 360
+      document.getElementById("secondImage").style.transform = `rotate(${deg}deg)`
+    }, 1000/60)
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+    // const metaphor = document.getElementById("metaphor");
+    // const response = document.getElementById("response");
+    // const firstImage = document.getElementById("first-image");
+    // response.addEventListener('click', function() {
+    //   metaphor.style.fontSize = "80px";
+    //   response.style.border = "10px solid mediumpurple";
+    //   firstImage.style.transform = "rotate(-5deg)";
+    // });
+
+    // all javascript above here
+  </script>
+</html>
