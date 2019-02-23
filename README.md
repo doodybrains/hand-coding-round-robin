@@ -12,6 +12,8 @@ equal attention will be given to html elements, css styles, and the content on t
 
 [html + css references here !](https://doodybrains.github.io/hand-coding-round-robin/reference.html)
 
+[css color reference here !](http://colours.neilorangepeel.com/)
+
 ## preparation
 _Note: You will need your own computer to participate in this workshop. We will be switching seats and working on each others computers so you should also be comfortable with someone else using your computer. We will only be working within one file in a text editor and it will already be opened by the time another student sits down at your computer._
 
