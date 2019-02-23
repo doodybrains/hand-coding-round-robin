@@ -88,10 +88,7 @@ to put your website on the world wide web (for free!) you can follow these guide
 2. tbd
 3. tbd
 
-
-### web pages made from this workshop:
-
-#### saturday feb 23 @ itp with the onions
+#### web pages from saturday feb 23 @ itp with the onions
 
 [one](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/one.html) [two](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/two.html) [three](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/three.html)
 [four](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/four.html)
