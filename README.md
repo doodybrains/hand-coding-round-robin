@@ -93,15 +93,18 @@ to put your website on the world wide web (for free!) you can follow these guide
 
 #### saturday feb 23 @ itp with the onions
 
-[one](./feb-23-onions/one.html)
+[one](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/one.html)
 
-[two](./feb-23-onions/two.html)
+[two](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/two.html)
 
-[three](./feb-23-onions/three.html)
+[three](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/three.html)
 
-[four](./feb-23-onions/four.html)
+[four](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/four.html)
 
-[five](./feb-23-onions/five.html)
-[six](./feb-23-onions/six.html)
-[seven](./feb-23-onions/seven.html)
-[eight](./feb-23-onions/eight.html)
+[five](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/five.html)
+
+[six](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/six.html)
+
+[seven](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/seven.html)
+
+[eight](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/eight.html)
