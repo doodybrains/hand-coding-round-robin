@@ -59,41 +59,34 @@
         text-decoration: none;
         border-bottom: 3px dashed blanchedalmond;
       }
+
       a:hover {
         color: springgreen;
       }
+
       p, ul li {
         font-size: 3em;
         line-height: 1.5em;
         letter-spacing: 0.03em;
         margin-bottom: 40px;
-        @media only screen and (min-width: 768px) {
-          font-size: 1.5em;
-          line-height: 1.5em;
-          margin-bottom: 20px;
-        }
       }
+
       ul li.upcoming {
         font-style: italic;
         font-weight: lighter;
         color: white;
-        @media only screen and (min-width: 768px) {
-          color: black;
-        }
-
       }
+
       ul li.title {
         color: springgreen;
         font-weight: bold;
         text-transform: uppercase;
       }
+
       ul li.by-line {
         padding-top: 10px;
         font-style: italic;
         font-size: 2.5em;
-        @media only screen and (min-width: 768px) {
-          font-size: 1.5em;
-        }
       }
 
       #sign-up {
@@ -112,6 +105,20 @@
         justify-content: center;
       }
 
+
+      @media only screen and (min-width: 768px) {
+        p, ul li {
+          font-size: 1.5em;
+          line-height: 1.5em;
+          margin-bottom: 20px;
+        }
+        ul li.upcoming {
+          color: black;
+        }
+        ul li.by-line {
+          font-size: 1.5em;
+        }
+      }
       /* write all of your cool css styles above this line  */
     </style>
   </head>
