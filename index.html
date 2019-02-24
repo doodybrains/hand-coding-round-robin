@@ -50,6 +50,8 @@
 
       section.workshop {
         border: 8px solid rgb(255, 70, 70);
+        display: flex;
+        align-items: center;
       }
 
       section h2 {
@@ -63,16 +65,22 @@
       }
 
       section p {
+        color: black;
         font-size: 1.25em;
-        color: honeydew;
       }
-
+      section p.schedule {
+        color: honeydew;
+        font-size: 1.675em;
+      }
       section pre {
-        font-size: 1em;
+        font-size: 2.5em;
         color: springgreen;
-        padding: 30px;
-        margin: 0 auto;
-        width: 600px;
+        padding: 10px;
+        line-height: 1.5em;
+        /* width: 50%; */
+        /* position: absolute;
+        right:0;
+        bottom:0; */
       }
 
       section code {
@@ -81,6 +89,7 @@
         width: 100%;
         padding: 10px;
         font-size: 2.5em;
+        color: honeydew;
       }
 
       section code span {
@@ -93,7 +102,8 @@
       }
 
       section strong {
-        font-size: 1.5em;
+        color: honeydew;
+        font-size: 2.5em;
       }
 
       section em {
@@ -121,40 +131,40 @@
 
     <section class="intro">
       <h2>today's sched</h2>
-      <p>
+      <p class="schedule">
         0:00 - 0:05
         <br>
-          introduction to workshop, what is hand coding?, index.html overview
+          introduction to workshop, what is hand coding?, html file overview
         <br>
         <br>
         0:05 - 0:10
         <br>
-          present prompt, create h1 tag with an id name, using the id add css style to h1 tag
+          present prompt, h1 tag
         <br>
         <br>
         0:10 - 0:15
         <br>
-          move down one seat, write a short response to the metaphor inside of a div inside of a p tag, give an id to the div and add styles
+          move down one seat, present prompt, p tag and div tag
         <br>
         <br>
         0:15 - 0:20
         <br>
-          move down one seat, find an image on the internet in response to the p tag, create image tag with an id
+          move down one seat, present prompt, img tag
         <br>
         <br>
         0:20 - 0:30
         <br>
-          move down one seat, add css styles to the image tag, use position absolute, add another image if you have time
+          move down one seat, present prompt, style img tag
         <br>
         <br>
         0:30 - 0:45
         <br>
-          move down one seat, look carefully at the code, what is the subtext of the page? add an h2 element, introduce javascipt
+          move down one seat, present prompt, h2 tag, javascript
         <br>
         <br>
         0:45 - 0:50
         <br>
-          return to your computer, add another p tag with a short response to the response someone wrote earlier, style this p tag so that it looks different from the other ones
+          return to your computer, present prompt, p tag
         <br>
         <br>
         0:50 - 0:60
@@ -187,29 +197,28 @@
         <br>
         <br>
         i'm interested in <strong>slowing down code</strong> and <em>eroding this notion of control</em>. today we are going to make webpages by carefully typing out html and css on each others computers
-        <code>
-          <span>&lt;p&gt;</span>ok with that said...<span>&lt;&sol;p&gt;</span>
-        </code>
       </p>
     </section>
 
     <section class="intro">
       <h2>what is hand coding</h2>
       <p>
-        all webpages are just files and <em>all</em> of them have a file called the <strong>index.html</strong> file.
         <br>
         <br>
-        in this workshop we are going to move away from the bloated websites of 2019 and <strong>learn how to build a webpage slowly, by hand, and with care</strong>. its possible it will look like a webpage from the 90s but it doesn't have to. the funny thing is that the languages, HTML, CSS, and Javascript are very much the same now as they were back then and its more about your content, how you style it and how you leverage the inherent functionality of these three languages.
+        all webpages are just files and <em>all</em> of them have <strong>a single file</strong> called the index.html file.
+        <br>
+        <br>
+        in this workshop we are going to move away from the bloated websites of 2019 and learn how to <strong>build a webpage slowly, and with care</strong>. its possible it will look like a webpage from the 90s but it doesn't have to. the funny thing is that the languages, HTML, CSS, and Javascript are very much the same now as they were back then and its more about your content, how you style it and how you leverage the inherent functionality of these three languages. <strong>we will type out each character of every code together</strong>required in order for a browser to display the content you are adding.
       </p>
     </section>
 
     <section class="workshop">
       <h2>1</h2>
       <p>
-         find the index.html file on your desktop. rename the file to <strong>your-name.html</strong>
+         find the index.html file on your desktop. <strong>rename the file to your-name.html</strong>
          <br>
          <br>
-         double click the file to open it in a <strong>browser</strong>. you should also open the file in a <strong>text editor</strong>. both the browser window and text editor window should be easily accessible so that other students can easily work on the file.
+         double click the file to <strong>open file in a browser</strong>. you should also <strong>open the file in a text editor</strong>. both the browser window and text editor window should be easily accessible so that other students can easily work on the file.
          <br>
          <br>
          let's look at the file in a text editor together...make a CSS change to the body tag
@@ -240,7 +249,7 @@
           <br>
           <br>
           after you add your metaphor, scroll back up to the CSS section and add some styles to your new element using the metaphor id:
-        <pre>
+        <!-- <pre>
           #metaphor {<br>
             font-size: 38px;<br>
             position: absolute;<br>
@@ -248,7 +257,7 @@
             left: 20px;<br>
             color: hotpink;
           }<br>
-        </pre>
+        </pre> -->
         </p>
     </section>
 
@@ -268,7 +277,7 @@
         <span>&lt;&sol;div&gt;</span>
        </code>
 
-       <pre>
+       <!-- <pre>
          #response {<br>
            font-size: 48px;<br>
            color: orangered;<br>
@@ -276,7 +285,7 @@
            background-color: blanchedalmond;<br>
            border-radius: 50%;<br>
          }<br>
-       </pre>
+       </pre> -->
       </p>
     </section>
 
@@ -295,7 +304,7 @@
         create an <strong>image tag</strong>
         <br>
         <br>
-        <strong>paste the url</strong> for the image <strong>inside of the quotes</strong> after the <strong>src</strong> attribute
+        <strong>paste the url</strong> for the image <strong>inside of the quotes, after src=</strong> attribute
         <br>
         <br>
         don't forget to add a description of the image inside the alt text attribute!!
@@ -321,19 +330,16 @@
         it should look something like this
         <br>
         <br>
-        the css tells your image to take up 80% of the window width, try out some of the styles like the position and transform rules
+        <strong>this css tells your image to take up 20% of the window width</strong>, try out some of the styles like the position and transform rules
         <br>
         <br>
-        <strong>save your file</strong> and open it in a browser to see what it looks like
+        save your file and open it in a browser to see what it looks like
         <br>
         <br>
         now you can add more styles to your image
         <pre>
           #name-of-id {<br>
-            width: 20%<br>
-            position: absolute;<br>
-            top: 80px;<br>
-            right: 10px;<br>
+            width: 20%;<br>
             transform: rotate(-20deg);<br>
           }
         </pre>
@@ -362,10 +368,13 @@
         return to your computer!
         <br>
         <br>
-        <strong>add one more p tag</strong> to your html, give it a unique id, write a short response to any of the content on the page
+        <strong>add one more p tag</strong> to your html, give it a unique id
         <br>
         <br>
-        add some styles to your new p element, it should look something like this, try some of the styles below if you have't already:
+        add some styles to your new p element, it should look something like this, try some of the styles below if you have't already
+        <br>
+        <br>
+        inside of the p tag <strong>describe how it felt to write code on someone else's computer? <br><br>what does it feel like to write code on your computer?</strong>
         <br>
         <br>
         <pre>
@@ -375,7 +384,6 @@
             transform: rotate(-45deg);
             background-color: blanchedalmond;
             border-radius: 50%;
-            word-wrap: break-word;
           }<br>
         </pre>
       </p>
@@ -384,10 +392,10 @@
     <section class="workshop">
       <h2>8</h2>
       <p>
-        <em>thank you : )</em>
+        <strong><em>thank you : )</em></strong>
         <br>
         <br>
-        please email me your files!!
+        please <strong>email me your files!!</strong>
         <br>
         <br>
         <strong>ern271@nyu.edu</strong>
