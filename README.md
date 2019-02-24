@@ -1,4 +1,5 @@
-# hand coding round robin
+# [hand coding round robin](https://doodybrains.github.io/hand-coding-round-robin/event)
+
 *workshopping a workshop where students will learn how to hand code a web page*
 
 ## what is this?
