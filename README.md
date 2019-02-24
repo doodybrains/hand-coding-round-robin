@@ -2,7 +2,7 @@
 *workshopping a workshop where students will learn how to hand code a web page*
 
 ## what is this?
-a one hour workshop where a group of students will learn how to hand code a web page.
+a one hour workshop where a group of students will learn how to hand code a web page by working on each others computers
 
 they will learn how to do this kind of coding slowly and with care.
 
@@ -10,7 +10,7 @@ equal attention will be given to html elements, css styles, and the content on t
 
 [workshop slides are here !](https://doodybrains.github.io/hand-coding-round-robin)
 
-[html + css references here !](https://doodybrains.github.io/hand-coding-round-robin/reference.html)
+[html + css syntax references here !](https://doodybrains.github.io/hand-coding-round-robin/reference.html)
 
 [css color reference here !](http://colours.neilorangepeel.com/)
 
@@ -18,12 +18,9 @@ equal attention will be given to html elements, css styles, and the content on t
 _Note: You will need your own computer to participate in this workshop. We will be switching seats and working on each others computers so you should also be comfortable with someone else using your computer. We will only be working within one file in a text editor and it will already be opened by the time another student sits down at your computer._
 
 1. Please have a text editor installed on your computer. Atom, Sublime Text, VS Code are all good!
-2. Please download this [file](https://github.com/doodybrains/hand-coding-round-robin/blob/master/pre-workshop-materials/index.html)
+2. Please download this [file](https://drive.google.com/file/d/1JUqr2cCKSKEOw6f9ZaJNthufTx_dDRLo/view?usp=sharing)
 3. Move it to your desktop so that it is easily accessible to you and other students
 
-`here is a gif of how to download the index.html from this repository`
-
-![gif of how to download index.html file](./pre-workshop-materials/how-to-download-index-file.gif)
 
 ## schedule
 
