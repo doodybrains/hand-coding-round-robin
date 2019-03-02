@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      name of webpage
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: darkslateblue;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+      #metaphor {
+        font-size: 30px;
+        color: tomato;
+
+
+      }
+
+      #my-response {
+        font-style:italic;
+        color: white;
+        border: 10px dashed red;
+        font-size: 16px;
+      }
+
+     #image1{
+       width: 60%;
+       transform: rotate(5deg);
+       border: 5px dotted hotpink;
+     }
+
+     #image2{
+       width: 40%;
+       hight: 40%;
+       position: absolute;
+       top: 300px;
+       right: 10px;
+       border: 12px dotted snow;
+     }
+
+     #msg{
+       position: absolute;
+       bottom: 0;
+       text-align: center;
+       background: black;
+       color: white;
+     }
+
+     #hidden-msg{
+       color: black;
+       transition: color 1s;
+     }
+
+     #hidden-msg:hover{
+       cursor: pointer;
+       color: white;
+       transition: color 1s;
+     }
+
+     #response{
+       color: tomato;
+     }
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <h1 id="metaphor">
+        the internet IS a metaphor
+      </h1>
+
+      <div id="my-response">
+        <p>
+          ...I am shaking right now!! So much to ponder... (o_o )
+        </p>
+        <p id="response">
+          this was fun and weird. using someone else's computer is disorienting. i hope nobody went through my stuff.
+          i am so tired and hope i have time to get coffee before my workshop.
+        </p>
+
+      </div>
+      <!-- nothing here yet, only write below here -->
+
+      <img id="image1" src="https://media.giphy.com/media/T28LgAIoOE34s/giphy.gif" alt="shaking! meataphor! shaking meataphor!"/>
+      <img id="image2" src="https://media.giphy.com/media/awZlpGEUN1PtC/giphy.gif" alt="shaking! meataphor! shaking meataphor!"/>
+
+      <h2 id="msg">THIS is the definition of internet: <span id="hidden-msg">NOTHING AND EVERYTHING</span></h2>
+      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+    // const metaphor = document.getElementById("metaphor");
+    // const response = document.getElementById("response");
+    // const firstImage = document.getElementById("first-image");
+    // response.addEventListener('click', function() {
+    //   metaphor.style.fontSize = "80px";
+    //   response.style.border = "10px solid mediumpurple";
+    //   firstImage.style.transform = "rotate(-5deg)";
+    // });
+
+    // all javascript above here
+  </script>
+</html>
