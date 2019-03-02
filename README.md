@@ -59,7 +59,7 @@ optional sharing, post-workshop notes
 
 ## references
 
-[J. R. CARPENTER || A Handmade Web](http://veryinteractive.net/content/2-library/50-a-handmade-web/carpenter-a-handmade-web.pdf)
+[J. R. CARPENTER || A Handmade Web](http://luckysoap.com/statements/handmadeweb.html)
 
 [Olia Lialina || A Vernacular Web](http://art.teleportacia.org/observation/vernacular/welcome/)
 
