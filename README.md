@@ -31,28 +31,27 @@ introduction to workshop, what is hand coding?, index.html overview
 
 `0:05 - 0:10`
 
-present prompt, create h1 tag with an id name, using the id add css style to h1 tag
+H1 tag, style by id
 
 `0:10 - 0:15`
 
-move down one seat, write a short response to the metaphor inside of a div inside of a p tag, give an id to the div and add styles
+Move down one seat, P tag inside div tag, style by id
 
 `0:15 - 0:20`
 
-move down one seat, find an image on the internet in response to the p tag, create image tag with an id
+Move down one seat, IMG tag with ID, copy and paste url for image
 
 `0:20 - 0:30`
 
-move down one seat, add css styles to the image tag, use position absolute, add another image if you have time
+Move down one seat, Style image by ID
 
 `0:30 - 0:45`
 
-move down one seat, look carefully at the code, what is the subtext of the page? add an h2 element, introduce javascipt
+Move down one seat, Freestyle ~ what is the hidden meaning of the web page (feel free to uncomment javascript below)
 
 `0:45 - 0:50`
 
-return to your computer, add another p tag with a short response to the response someone wrote earlier, style this p tag so that it looks
-different from the other ones
+Return to original seat, final P tag, style by ID
 
 `0:50 - 0:60`
 
