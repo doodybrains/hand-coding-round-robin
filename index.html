@@ -8,482 +8,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      html { box-sizing: border-box; }
-      *, *:before, *:after { box-sizing: inherit; }
-
-      body {
-        cursor: cell;
-        font-family: monospace;
-        background-color: black;
-        color: white;
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        margin: 0;
+      html {
+        box-sizing: border-box;
       }
 
-      div {
-        background-color: yellow;
-        position: fixed;
-        border-radius: 50%;
-        height: 10px;
-        width: 10px;
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family: monospace;
+        background-color: blueviolet;
+        color: blanchedalmond;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 10px;
+        -webkit-overflow-scrolling: touch;
       }
 
       h1 {
-        position: absolute;
-        top: 130px;
-        right: 80px;
-        margin: 0;
-        font-size: 30px;
+        font-size: 3em;
       }
 
-      section {
-        height: 100%;
-        position: relative;
-        padding: 55px 40px 25px 25px;
-      }
-
-      section.intro {
-        border: 8px solid rgb(116, 15, 248);
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        justify-content: center;
-      }
-
-      section.workshop {
-        border: 8px solid rgb(255, 70, 70);
-        display: flex;
-        align-items: center;
-      }
-
-      section h2 {
-        font-size: 2.5em;
-        font-style: italic;
-        color: rgb(233, 250, 233);
-        transform: rotate(-15deg);
-        position: absolute;
-        top: -30px;
-        left: 0px;
-      }
-
-      section p {
-        color: black;
-        font-size: 1.25em;
-        margin: 0;
-      }
-
-      section.intro p {
-        color: blanchedalmond;
+      h2 {
         font-size: 2em;
       }
 
-      section.intro p span.note {
-        display: block;
-        text-align: center;
-        font-size: 3.5em;
+      h3 {
+        font-size: 1.25em;
+        letter-spacing: 0.03em;
       }
 
-      section.intro p img.note {
-        display: block;
-        margin: 0 auto;
-        width: 65%;
+      ul {
+        list-style: none;
+        padding: 5px;
       }
-      section p.schedule {
-        color: honeydew;
-        font-size: 1.675em;
+
+      a {
+        color: blanchedalmond;
+        text-decoration: none;
+        border-bottom: 3px dashed blanchedalmond;
       }
-      section.intro.video {
-        display: block;
-      }
-      section.intro.video div {
-        height: auto;
-        width: 60%;
-        margin: 0 auto;
-        border-radius: none;
-        border: none;
-        background-color: transparent;
-      }
-      section pre {
-        font-size: 2.5em;
+
+      a:hover {
         color: springgreen;
-        padding: 10px;
+      }
+
+      p, ul li {
+        font-size: 2em;
         line-height: 1.5em;
-        /* width: 50%; */
-        /* position: absolute;
-        right:0;
-        bottom:0; */
+        letter-spacing: 0.03em;
+        margin-bottom: 40px;
       }
 
-      section code {
-        margin-top: 5px;
-        display: block;
-        width: 100%;
-        padding: 10px;
-        font-size: 2.5em;
-        color: honeydew;
+      ul li.upcoming {
+        font-style: italic;
+        font-weight: lighter;
+        color: white;
       }
 
-      section code span {
-        color: orangered;
+      ul li.title {
+        color: springgreen;
+        font-weight: bold;
+        text-transform: uppercase;
       }
 
-      section code span em {
-        color: purple;
-        font-size: 0.75em;
+      ul li.by-line {
+        padding-top: 10px;
+        font-style: italic;
+        font-size: 1.5em;
       }
 
-      section strong {
-        color: honeydew;
-        font-size: 2.5em;
+      #sign-up {background-color: black;padding: 15px;position: fixed;top: 20px;right: 20px;font-size: 1em;text-transform: uppercase;border-radius: 50%;height: 80px;width: 80px;display: flex;align-items: center;text-align: center;justify-content: center;
+      }
+      .dates {
+        padding-top: 60px;
+      }
+      .notes h4,
+      .dates h4,
+      .refs h4 {
+        font-size: 1.75em;
+        text-transform: uppercase;
+        color: white;
+        background-color: blue;
+        padding: 3px 10px;
+        font-style: italic;
+        letter-spacing: 0.03em;
+        display: inline-block;
+        margin: 0;
       }
 
-      section em {
-        font-size: 1.125em;
+      .notes ul {
+        background: black;
+        color: white;
+      }
+      .notes ul li {
+        margin-bottom: 60px;
+      }
+      @media only screen and (min-width: 768px) {
+        .handcoding-is-fun {
+          padding: 20px 60px 20px 20px;
+          font-size: 1.5em;
+        }
+        #sign-up {
+          height: 160px;
+          width: 160px;
+        }
+        h1 {
+          font-size: 6.5em;
+        }
+        h2 {
+          font-size: 3em;
+        }
+        ul {
+          padding: 30px;
+        }
+        p, ul li {
+          font-size: 1.5em;
+          line-height: 1.5em;
+          margin-bottom: 20px;
+        }
+        ul li.upcoming {
+          color: black;
+        }
+        ul li.by-line {
+          font-size: 1.5em;
+        }
       }
     </style>
   </head>
 
-  <body>
-    <section class="intro">
-      <h1>hand coding round robin</h1>
-      <p>
-        workshop ~ 2019
-      <br>
-        by emma "doodybrains" rae norton
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <em>this web page is best viewed in full screen mode</em>
-      </p>
-    </section>
+      <body>
+        <div class="handcoding-is-fun">
+          <h1>hand coding round robin</h1>
 
-    <section class="intro">
-      <h2>today's sched</h2>
-      <p class="schedule">
-        0:00 - 0:05
-        <br>
-          introduction to workshop, what is hand coding?, html file overview
-        <br>
-        <br>
-        0:05 - 0:10
-        <br>
-          Start at your seat, H1 tag, style by id
-        <br>
-        <br>
-        0:10 - 0:15
-        <br>
-          Move down one seat, P tag inside div tag, style by id
-        <br>
-        <br>
-        0:15 - 0:20
-        <br>
-          Move down one seat, IMG tag with ID, copy and paste url for image
-        <br>
-        <br>
-        0:20 - 0:30
-        <br>
-          Move down one seat, Style image by ID
-        <br>
-        <br>
-        0:30 - 0:45
-        <br>
-          Move down one seat, Freestyle ~ what is the hidden meaning of the web page (feel free to uncomment javascript)
-        <br>
-        <br>
-        0:45 - 0:50
-        <br>
-          Return to original seat, final P tag, style by ID
-        <br>
-        <br>
-        0:50 - 0:60
-        <br>
-          optional sharing, post-workshop notes
-        <br>
-        <br>
-      </p>
-    </section>
+          <h2>
+          participants of this workshop will learn how to "hand code" a web page by working on each others computers
+          <br><br>
+          the session will start with a brief lecture on the significance of coding slowly and by hand.
+          <br><br>
+          participants will learn how to do this kind of coding by example and with care.
+          <br><br>
+          equal attention will be given to html elements, css styles, and the content on the page.
+          <br><br>
+          through adding and styling the content of each others web pages students will learn the basic building blocks of web development as well as what it feels like to code with and for each other.
+          </h2>
 
-    <section class="intro">
-      <h2>1</h2>
-      <p>
-        <!--In leading up to this workshop I have been thinking a lot about computation as metaphor. Because all computational systems are always and already built on top of metaphor then computers require that programming, as we know it today, be a set of abstract processes.-->
-        <span class="note">computation as metaphor</span>
-      </p>
-    </section>
-    <section class="intro">
-      <h2>2</h2>
-      <p>
-        <!--By this, I mean that if computers at their core are just complex sets of on and off switches then everything we do on our computers today abstracts away those complexities so that we can do what we want to do on our computers without thinking and with a lot of speed. Computer time has always been more important than human time.-->
-        <img class="note" src="https://d2w9rnfcy7mm78.cloudfront.net/113204/large_0b23c01708037876b2c31bde91aa4570.jpg?1369764580" alt="A Colossus Mark 2 computer being operated by Wrens. The slanted control panel on the left was used to set the 'pin' (or 'cam') patterns of the Lorenz. The 'bedstead' paper tape transport is on the right." />
-      </p>
-    </section>
-    <section class="intro">
-      <h2>3</h2>
-      <p>
-        <!--Enter the GUI. The idea of a file inside a folder on a desktop...and there's a trashcan. The office metaphor, one which we may never get away from. But what is the file really? And what is the folder? I just learned that folders aren't actually anything. They don't take up *any* space on your computer.-->
-        <img src="https://d2w9rnfcy7mm78.cloudfront.net/3764840/large_d5906f2734eea06265f047beeabe24d5.png?1551467084" class="note" alt="drawing from not a desktop, not a metaphor" />
-      </p>
-    </section>
-    <section class="intro">
-      <h2>4</h2>
-      <p>
-         <!--Since folders and files, which if we looked closely at them might not resemble anything close to a piece of paper inside a folded piece of paper, are already metaphors for underlying computational processes and therefore already abstractions of code required for physical computation to occur then the feeling of control that we as users of computers have is an illusion.-->
-         <span class="note">illusion of power</span>
-      </p>
-    </section>
-    <section class="intro">
-      <h2>5</h2>
-      <p>
-        <!--I think it's important to note this illusion. I think having an illusion of control leads programmers down a potentially dangerous path. Programmers, through the creation of complex processes and algorithmic systems go through so many hurdles trying to get the computer to do what they want it to do. When the computer finally obeys their commands they are granted with this feeling of immense gratification and power.-->
-        <img src="https://d2w9rnfcy7mm78.cloudfront.net/3766099/large_916a89993db4db6748329b95f7aa1577.png?1551475953" alt="screenshot from Silicon Valley - HBO tv show - a group of Hooli programmers are trying to solve something on a computer." class="note" />
-      </p>
-    </section>
-    <section class="intro">
-      <h2>6</h2>
-      <p>
-        <!--I'm wondering, if the process of programming a smartphone application, for instance, is rooted in notions of command and control and illusion and power, does this make for potentially dangerous results? Does it perhaps mean that programmers get so caught up in the power dynamic between themselves and their computer that they lose sight of how what they're doing lives in the real world alongside real humans?-->
-        <img src="https://d2w9rnfcy7mm78.cloudfront.net/3765077/large_890292a296e0e88e6ba3afc65794dcad.png?1551469466" class="note" alt="image of programmer working at a computer from New Yorker article called Silicon Valley Has an Empathy Problem" />
-      </p>
-    </section>
-    <section class="intro video">
-      <h2>7</h2>
-      <p>
-        <!--What would it mean if programmers had to manually move the switches to on and off positions in order to make their program work? What if programmers had to press the keys of their keyboards so gently that it required them to move extremely slow and therefore with care?-->
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/320834883?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-      </p>
-    </section>
-    <section class="intro">
-      <h2>8</h2>
-      <p>
-      <!--Enter hand coding. Hand coding is the process of development that bridges the gap between you as the programmer and your computer, specifically your browser, as the performer of the program. The code you will write in this workshop will be very particular and you will write out each character slowly and by hand, no copying or pasting. You will also do this on each other computers - the intention here is to perhaps erode this feeling of ultimate control that you have over your computer's system and to move carefully around someone else's.-->
-      <img src="camerons-world.gif" alt="Gif of Cameron's World - A website collection of geocities websites." class="note" />
-      </p>
-    </section>
+          <h3>taught by <a href="http://marceldochamp.net" target="_blank">emma rae norton</a></h3>
 
-    <section class="workshop">
-      <h2>1</h2>
-      <p>
-         find the index.html file on your desktop. <strong>rename the file to your-name.html</strong>
-         <br>
-         <br>
-         double click the file to <strong>open file in a browser</strong>. you should also <strong>open the file in a text editor</strong>. both the browser window and text editor window should be easily accessible so that other students can easily work on the file.
-         <br>
-         <br>
-         let's look at the file in a text editor together...make a CSS change to the body tag
-      </p>
-    </section>
+          <!-- <a id="sign-up" href="http://attending.io/events/hand-coding-round-robin" target="_blank">sign up</a> -->
+          <div class="dates">
+            <h4>upcoming:</h4>
+            <ul>
+              <li class="title">tbd</li>
+              <li>tbd</li>
+              <li>new york city !</li>
+            </ul>
 
-    <section class="workshop">
-      <h2>2</h2>
-        <p>
-          scroll down and place your cursor somewhere inside the body tag
-          <br>
-          <br>
-          inside of an <strong>h1 tag</strong>, please write a sentence or phrase responding to this prompt:
-          <br>
-          <br>
-          <strong>think of a metaphor for the world wide web.</strong>
-          <br>
-          <br>
-          make sure to write something that you would want your peers to see
-          <br>
-          <br>
-          and that its something fun for them respond to !
-          <br>
-          <br>
-          <code>
-            <span>&lt;h1 id="metaphor"&gt;</span>the world wide web is a big plate of spaghetti and meatballs, with extra parmigiano-reggiano<span>&lt;&sol;h1&gt;</span>
-          </code>
-          <br>
-          <br>
-          after you add your metaphor, scroll back up to the CSS section and add some styles to your new element using the metaphor id:
-        <!-- <pre>
-          #metaphor {<br>
-            font-size: 38px;<br>
-            position: absolute;<br>
-            top: 40px;<br>
-            left: 20px;<br>
-            color: hotpink;
-          }<br>
-        </pre> -->
-        </p>
-    </section>
-
-    <section class="workshop">
-      <h2>3</h2>
-      <p>
-        scroll down and place your cursor somewhere inside the body tag, a few lines below the h1 tag
-        <br>
-        <br>
-         <strong>p tag</strong> inside of an <strong>div tag</strong>, please write a short response to the h1 tag phrase, think about the subtext of the metaphor:
-        <br>
-        <br>
-        you should also <strong>add an id</strong>, the name of the id can be anything you want, refer to the id in your css to add styles
-       <code>
-         <span>&lt;div id="response"&gt;</span><br>
-          <span>&lt;p&gt;</span>all of the fiber optic cables are like a big mess of spaghetti, facebook, amazon, google, just a bunch of meatballs, but the sprinkling of hand coded websites on top of it all makes it ok<span>&lt;&sol;p&gt;</span><br>
-        <span>&lt;&sol;div&gt;</span>
-       </code>
-
-       <!-- <pre>
-         #response {<br>
-           font-size: 48px;<br>
-           color: orangered;<br>
-           transform: rotate(-25deg);<br>
-           background-color: blanchedalmond;<br>
-           border-radius: 50%;<br>
-         }<br>
-       </pre> -->
-      </p>
-    </section>
-
-    <section class="workshop">
-      <h2>4</h2>
-      <p>
-        now open a browser window and search for an image in response to something written in the file
-        <br>
-        <br>
-        copy the image address to your clipboard
-        <br>
-        <br>
-        back in the editor, scroll down and place your cursor somewhere inside the body tag, a few lines below the response div
-        <br>
-        <br>
-        create an <strong>image tag</strong>
-        <br>
-        <br>
-        <strong>paste the url</strong> for the image <strong>inside of the quotes, after src=</strong> attribute
-        <br>
-        <br>
-        don't forget to add a description of the image inside the alt text attribute!!
-        <br>
-        <br>
-        <code>
-          <span>&lt;img id="<em>name-of-image-id</em>" alt="<em>description of the image</em>" src="<em>http://url-of-image.com</em>"<span>&sol;&gt;</span>
-        </code>
-        <br>
-        <br>
-      </p>
-    </section>
-
-    <section class="workshop">
-      <h2>5</h2>
-      <p>
-        <strong>what is the name of the id on the image tag?</strong>
-        <br>
-        <br>
-        scroll up to the css section of the document an create a list of styles for that id
-        <br>
-        <br>
-        it should look something like this
-        <br>
-        <br>
-        <strong>this css tells your image to take up 20% of the window width</strong>, try out some of the styles like the position and transform rules
-        <br>
-        <br>
-        save your file and open it in a browser to see what it looks like
-        <br>
-        <br>
-        now you can add more styles to your image
-        <pre>
-          #name-of-id {<br>
-            width: 20%;<br>
-            transform: rotate(-20deg);<br>
-          }
-        </pre>
-      </p>
-    </section>
-
-    <section class="workshop">
-      <h2>6</h2>
-      <p>
-        take a moment to look at the web page in the browser
-        <br>
-        <br>
-        go back to the index.html file, look at the code carefully
-        <br>
-        <br>
-        <strong>what is the subtext or hidden meaning of this web page? put your thoughts inside of an h2 tag and style it!</strong>
-        <br>
-        <br>
-        if you want you can uncomment the javascript at the bottom of the file, test it out and make changes !
-      </p>
-    </section>
-
-    <section class="workshop">
-      <h2>7</h2>
-      <p>
-        return to your computer!
-        <br>
-        <br>
-        <strong>add one more p tag</strong> to your html, give it a unique id
-        <br>
-        <br>
-        add some styles to your new p element, it should look something like this, try some of the styles below if you have't already
-        <br>
-        <br>
-        inside of the p tag <strong>describe how it felt to write code on someone else's computer? <br><br>what does it feel like to write code on your computer?</strong>
-        <br>
-        <br>
-        <pre>
-          #name-of-p-id {
-            font-size: 48px;
-            color: orangered;
-            transform: rotate(-45deg);
-            background-color: blanchedalmond;
-            border-radius: 50%;
-          }<br>
-        </pre>
-      </p>
-    </section>
-
-    <section class="workshop">
-      <h2>8</h2>
-      <p>
-        <strong><em>thank you : )</em></strong>
-        <br>
-        <br>
-        please <strong>email me your files!!</strong>
-        <br>
-        <br>
-        <strong>ern271@nyu.edu</strong>
-        <br>
-        <br>
-        i will archive them on this website</em>
-      </p>
-    </section>
+            <h4>past:</h4>
+            <ul>
+              <li class="title">Sunday June 20th 2019 @ 12pm sharp!</li>
+              <li>NYU ITP ~ Tisch Building</li>
+              <li>721 Broadway, New York, NY 10003</li>
+            </ul>
+            <ul>
+              <li class="title">Saturday March 2nd 2019 @ 1PM sharp!</li>
+              <li>NYU Bobst Library ~ Computer Lab 617</li>
+              <li>70 Washington Square South, New York, NY 10003</li>
+              <li class="by-line"><em>this workshop is presented as a final project for <a href="https://teachingasart.github.io/posts/teachingasartday/" target="_blank">Teaching as Art</a> class at NYU ITP</em></li>
+            </ul>
+          </div>
+          <div class="notes">
+            <h4>notes:</h4>
+            <ul>
+              <li>1. you will need to bring your own computer.</li>
+              <li>2. mentally prepare for the fact that other participants will be using your computer, and you theirs</li>
+              <li>3. please download this <a href="https://bit.ly/2FsLEDL" target="_blank">file</a> and save it to your desktop (don't open it in google docs)</li>
+              <li>4. have a text editor installed. atom, sublime text, brackets and visual studio code are all great options.</li>
+              <li>5. have a web browser installed.</li>
+              <li>6. please review the <a href="https://github.com/doodybrains/hand-coding-round-robin" target="_blank">syllabus</a> and <a href="mailto:ern271@nyu.edu">email me</a> with any questions.</li>
+            </ul>
+          </div>
+          <div class="refs">
+            <h4>references:</h4>
+            <ul>
+              <li><a href="http://luckysoap.com/statements/handmadeweb.html" target="_blank">J. R. CARPENTER - A Handmade Web</a></li>
+              <li><a href="http://art.teleportacia.org/observation/vernacular/welcome/" target="_blank">Olia Lialina - A Vernacular Web</a></li>
+              <li><a href="http://sfpc.io/codesocieties_students" target="_blank">sfpc code societies - student archive</a></li>
+            </ul>
+          </div>
+        </div>
   </body>
-
-  <script type="application/javascript">
-    window.addEventListener('load', windowLoaded);
-    var pen = false;
-
-    function windowLoaded() {
-      document.addEventListener('mousemove', mouseMoved);
-      document.addEventListener('keydown', keyDown);
-    }
-
-    function keyDown(e){
-      if (e.key === "Shift") {
-        pen = true;
-      } else if (e.key === "z") {
-        pen = false;
-      }
-    }
-
-    function mouseMoved(e) {
-      const m = document.createElement('div');
-      document.getElementsByTagName('body')[0].append(m);
-
-      if (pen) {
-        m.style.top = `${e.clientY}px`;
-        m.style.left =`${e.clientX}px`;
-      }
-    }
-  </script>
 </html>

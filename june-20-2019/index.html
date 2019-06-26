@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      hand coding round robin
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html { box-sizing: border-box; }
+      *, *:before, *:after { box-sizing: inherit; }
+
+      body {
+        cursor: cell;
+        font-family: monospace;
+        background-color: black;
+        color: white;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 0;
+      }
+
+      div {
+        background-color: yellow;
+        position: fixed;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+      }
+
+      h1 {
+        position: absolute;
+        top: 130px;
+        right: 80px;
+        margin: 0;
+        font-size: 30px;
+      }
+
+      section {
+        height: 200vh;
+        position: relative;
+        padding: 55px 40px 25px 25px;
+      }
+
+      section.intro {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+      }
+
+      section.workshop {
+        display: flex;
+        align-items: center;
+      }
+
+      section h2 {
+        font-size: 2.5em;
+        font-style: italic;
+        color: rgb(233, 250, 233);
+        transform: rotate(-15deg);
+        position: absolute;
+        top: -30px;
+        left: 0px;
+      }
+
+      section p {
+        color: black;
+        font-size: 1.25em;
+        margin: 0;
+      }
+
+      section.intro p {
+        color: blanchedalmond;
+        font-size: 2em;
+      }
+
+      section.intro p span.note {
+        display: block;
+        text-align: center;
+        font-size: 3.5em;
+      }
+
+      section.intro p img.note {
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+      }
+      section p.schedule {
+        color: honeydew;
+        font-size: 1em;
+      }
+      section p.schedule span {
+        color: honeydew;
+        font-size: 1.625em;
+        font-style: italic;
+        display: block;
+        margin-left: -20px;
+      }
+      section.intro.video {
+        display: block;
+      }
+      section.intro.video div {
+        height: auto;
+        width: 60%;
+        margin: 0 auto;
+        border-radius: none;
+        border: none;
+        background-color: transparent;
+      }
+      section pre {
+        font-size: 2.5em;
+        color: springgreen;
+        padding: 10px;
+        line-height: 1.5em;
+        /* width: 50%; */
+        /* position: absolute;
+        right:0;
+        bottom:0; */
+      }
+
+      section code {
+        display: block;
+        width:  80%;
+        margin: 25px auto;
+        padding: 30px;
+        font-size: 2.5em;
+        background: honeydew;
+        color: #aaa;
+      }
+
+      section code span {
+        color: orangered;
+      }
+
+      section code span em {
+        color: purple;
+        font-size: 0.75em;
+      }
+
+      section strong {
+        color: honeydew;
+        font-size: 2.5em;
+      }
+
+      section em {
+        font-size: 1.125em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="intro">
+      <h1>hand coding round robin</h1>
+      <p>
+        workshop ~ 2019
+      <br>
+        by emma "doodybrains" rae norton
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <em>this web page is best viewed in full screen mode</em>
+      </p>
+    </section>
+
+    <section class="intro">
+      <h2>today's sched</h2>
+      <p class="schedule">
+        <span>12:00 - 12:05</span>
+        <br>
+          introduction to workshop, what is hand coding?
+        <br>
+        <br>
+        <span>12:05 - 12:15</span>
+        <br>
+          lecture
+        <br>
+        <br>
+        <span>12:15 - 12:20</span>
+        <br>
+          discussion
+        <br>
+        <br>
+        <span>12:20 - 12:25</span>
+        <br>
+          html file overview
+        <br>
+        <br>
+        <span>12:25 - 12:35</span>
+        <br>
+          element 1
+        <br>
+        <br>
+        <span>12:35 - 12:45</span>
+        <br>
+          element 2
+        <br>
+        <br>
+        <span>12:45 - 12:55</span>
+        <br>
+          element 3
+        <br>
+        <br>
+        <span>12:55 - 1:05</span>
+        <br>
+          element 4
+        <br>
+        <br>
+        <span>1:05 - 1:10</span>
+        <br>
+          element 5
+        <br>
+        <br>
+        <span>1:10 - 1:20</span>
+        <br>
+          element 6
+        <br>
+        <br>
+        <span>1:20 - 1:30</span>
+        <br>
+          element 7
+        <br>
+        <br>
+        <span>1:30 - 1:40</span>
+        <br>
+          element 8 - back at original seat
+        <br>
+        <br>
+        <span>1:40 - 1:45</span>
+        <br>
+          send files to emma
+        <br>
+        <br>
+        <span>1:45 - 2:00</span>
+        <br>
+          sharing and wrap up
+        <br>
+        <br>
+      </p>
+    </section>
+
+    <section class="intro">
+      <h2>0</h2>
+      <p>
+        <span class="note">https://bit.ly/2FsLEDL</span>
+      </p>
+    </section>
+
+    <section class="intro">
+      <h2>1</h2>
+      <p>
+        <!--In leading up to this workshop I have been thinking a lot about computation as metaphor. Because all computational systems are always and already built on top of metaphor then computers require that programming, as we know it today, be a set of abstract processes.-->
+        <span class="note">computation as metaphor</span>
+      </p>
+    </section>
+    <section class="intro">
+      <h2>2</h2>
+      <p>
+        <!--By this, I mean that if computers at their core are just complex sets of on and off switches then everything we do on our computers today abstracts away those complexities so that we can do what we want to do on our computers without thinking and with a lot of speed. Computer time has always been more important than human time.-->
+        <img class="note" src="https://d2w9rnfcy7mm78.cloudfront.net/113204/large_0b23c01708037876b2c31bde91aa4570.jpg?1369764580" alt="A Colossus Mark 2 computer being operated by Wrens. The slanted control panel on the left was used to set the 'pin' (or 'cam') patterns of the Lorenz. The 'bedstead' paper tape transport is on the right." />
+      </p>
+    </section>
+    <section class="intro">
+      <h2>3</h2>
+      <p>
+        <!--Enter the GUI. The idea of a file inside a folder on a desktop...and there's a trashcan. The office metaphor, one which we may never get away from. But what is the file really? And what is the folder? I just learned that folders aren't actually anything. They don't take up *any* space on your computer.-->
+        <img src="https://d2w9rnfcy7mm78.cloudfront.net/3764840/large_d5906f2734eea06265f047beeabe24d5.png?1551467084" class="note" alt="drawing from not a desktop, not a metaphor" />
+      </p>
+    </section>
+    <section class="intro">
+      <h2>4</h2>
+      <p>
+         <!--Since folders and files, which if we looked closely at them might not resemble anything close to a piece of paper inside a folded piece of paper, are already metaphors for underlying computational processes and therefore already abstractions of code required for physical computation to occur then the feeling of control that we as users of computers have is an illusion.-->
+         <span class="note">illusion of power</span>
+      </p>
+    </section>
+    <section class="intro">
+      <h2>5</h2>
+      <p>
+        <!--I think it's important to note this illusion. I think having an illusion of control leads programmers down a potentially dangerous path. Programmers, through the creation of complex processes and algorithmic systems go through so many hurdles trying to get the computer to do what they want it to do. When the computer finally obeys their commands they are granted with this feeling of immense gratification and power.-->
+        <img src="https://d2w9rnfcy7mm78.cloudfront.net/3766099/large_916a89993db4db6748329b95f7aa1577.png?1551475953" alt="screenshot from Silicon Valley - HBO tv show - a group of Hooli programmers are trying to solve something on a computer." class="note" />
+      </p>
+    </section>
+    <section class="intro">
+      <h2>6</h2>
+      <p>
+        <!--I'm wondering, if the process of programming a smartphone application, for instance, is rooted in notions of command and control and illusion and power, does this make for potentially dangerous results? Does it perhaps mean that programmers get so caught up in the power dynamic between themselves and their computer that they lose sight of how what they're doing lives in the real world alongside real humans?-->
+        <img src="https://d2w9rnfcy7mm78.cloudfront.net/3765077/large_890292a296e0e88e6ba3afc65794dcad.png?1551469466" class="note" alt="image of programmer working at a computer from New Yorker article called Silicon Valley Has an Empathy Problem" />
+      </p>
+    </section>
+    <section class="intro video">
+      <h2>7</h2>
+      <p>
+        <!--What would it mean if programmers had to manually move the switches to on and off positions in order to make their program work? What if programmers had to press the keys of their keyboards so gently that it required them to move extremely slow and therefore with care?-->
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/320834883?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </p>
+    </section>
+    <section class="intro">
+      <h2>8</h2>
+      <p>
+      <!--Enter hand coding. Hand coding is the process of development that bridges the gap between you as the programmer and your computer, specifically your browser, as the performer of the program. The code you will write in this workshop will be very particular and you will write out each character slowly and by hand, no copying or pasting. You will also do this on each other computers - the intention here is to perhaps erode this feeling of ultimate control that you have over your computer's system and to move carefully around someone else's.-->
+      <img src="camerons-world.gif" alt="Gif of Cameron's World - A website collection of geocities websites." class="note" />
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>0</h2>
+      <p>
+         <strong>rename the file to your-name.html</strong>
+         <br>
+         <br>
+         <strong>open file in a browser</strong>
+         <br>
+         <br>
+         <strong>open the file in a text editor</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>1</h2>
+      <p>
+         <strong>metaphor for the world wide web</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>2</h2>
+      <p>
+         <strong>respond the metaphor on the page</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>3</h2>
+      <p>
+         <strong>find an image that describes this metaphor</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>4</h2>
+      <p>
+         <strong>what is the subtext or hidden meaning of this page?</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>5</h2>
+      <p>
+         <strong>what is missing from this page?</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>6</h2>
+      <p>
+         <strong>freestyle</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>7</h2>
+      <p>
+         <strong>how does it feel to be on someone else's computer?</strong>
+      </p>
+    </section>
+
+    <section class="workshop">
+      <h2>8</h2>
+      <p>
+         <strong>back to your computer, what is[nt] surprising about this page?</strong>
+      </p>
+    </section>
+  </body>
+
+  <script type="application/javascript">
+    window.addEventListener('load', windowLoaded);
+    var pen = false;
+
+    function windowLoaded() {
+      document.addEventListener('mousemove', mouseMoved);
+      document.addEventListener('keydown', keyDown);
+    }
+
+    function keyDown(e){
+      if (e.key === "Shift") {
+        pen = true;
+      } else if (e.key === "z") {
+        pen = false;
+      }
+    }
+
+    function mouseMoved(e) {
+      const m = document.createElement('div');
+      document.getElementsByTagName('body')[0].append(m);
+
+      if (pen) {
+        m.style.top = `${e.clientY}px`;
+        m.style.left =`${e.clientX}px`;
+      }
+    }
+  </script>
+</html>
