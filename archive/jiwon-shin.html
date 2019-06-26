@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Round Robin
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: lightblue;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+      #my-metaphor{
+        animation: blink 0.5s alternate infinite;
+        text-align: center;
+        font-size: 48px;
+        color: lightyellow;
+        background-color: black;
+      }
+      #response{
+        border: 1px solid tomato;
+        color: black;
+        font-size: 20px;
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      @keyframes blink{
+        from{
+          opacity: 0;
+        }
+        to{
+          opacity: 100%;
+        }
+      }
+
+      @keyframes boop{
+        from{
+          transform: rotate(-45deg) scale(1);
+        }
+        to{
+          transform: rotate(45deg) scale(1.4);
+        }
+      }
+
+      #my-image {
+        margin-top: 140px;
+        width: 100%;
+        box-shadow: 5px 5px 10px red;
+        animation: boop 0.15s alternate infinite;
+      }
+
+     #myquote{
+        text-shadow:3px hotpink;
+     }
+
+     #reflection{
+        position: absolute;
+        top: 25vh;
+        color: white;
+        font-size: 72px;
+     }
+
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+      <h1 id="my-metaphor">noisy thunder storm on a starry night</h1>
+      <div id="response">
+        how is it a starry night if there's a thunder storm? or is that part of the metaphor?
+      </div>
+
+      <img id="my-image" src="https://i.ytimg.com/vi/KIxEOpFCFrE/maxresdefault.jpg" alt="maybe-the-stars-are-not-in-the-sky" />
+
+
+      <blockquote id="myquote">
+      Dizzy crazy star
+
+      </blockquote>
+      <!-- only write above here, add more space above this line if necessary -->
+      <p id="reflection">Now my computer doesn't feel like mine anymore. It's free and it has it's own mind.</p>
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+    // const metaphor = document.getElementById("metaphor");
+    // const response = document.getElementById("response");
+    // const firstImage = document.getElementById("first-image");
+    // response.addEventListener('click', function() {
+    //   metaphor.style.fontSize = "80px";
+    //   response.style.border = "10px solid mediumpurple";
+    //   firstImage.style.transform = "rotate(-5deg)";
+    // });
+
+    // all javascript above here
+  </script>
+</html>

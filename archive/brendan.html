@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      brendan
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: lime;
+        color: red;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+      #response {
+        background-color: black;
+        font-size: 1.4rem;
+        padding: 5rem;
+        border-radius: 100px;
+        border: 30px inset hotpink;
+      }
+
+      #myimage {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-top: solid red 10px;
+        border-left: solid blue 10px;
+        border-right: solid yellow 10px;
+        border-bottom: solid green 10px;
+        animation: rotate 1s alternate infinite;
+      }
+
+      #last-image {
+        position: absolute;
+        bottom: 20%;
+        animation: rotate 0.25s alternate infinite;
+        border: 6px solid red;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(-30deg);
+        }
+        to {
+          transform: rotateZ(30deg);
+        }
+      }
+
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+      <h1 id="my-metaphor">
+        The internet is a bowl of soup with a lot of weird, conflicting
+        ingredients but it tastes kind of good?.
+      </h1>
+
+      <div id="response">
+        <p>
+          its a bit of a chunky soup, some parts meatier, some parts thin and
+          watery. should we put it in a blender? whose blender will it be? who
+          will put it on? would everything connect to everything equally then?
+          would the taste change?
+        </p>
+      </div>
+
+      <img
+        id="myimage"
+        src="https://static01.nyt.com/images/2016/11/29/dining/recipelab-chick-noodle-still/recipelab-chick-noodle-still-videoSixteenByNineJumbo1600.jpg"
+        alt="this is a photo of dilicioud soup"
+      />
+
+      <img
+        id="last-image"
+        src="http://www.seniorark.com/images/computer%20surfing.gif"
+        alt=""
+      />
+      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+    // const metaphor = document.getElementById("metaphor");
+    const response = document.getElementById("response");
+    const firstImage = document.getElementById("first-image");
+    response.addEventListener("click", function() {
+      // metaphor.style.fontSize = "80px";
+      // response.style.border = "10px solid mediumpurple";
+      response.style.transform = "rotate(-180deg)";
+    });
+
+    // all javascript above here
+  </script>
+</html>

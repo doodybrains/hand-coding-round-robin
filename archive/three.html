@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      name of webpage
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: black;
+        color: hotpink;
+      }
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+      #metaphor{
+        border: 20px;
+        font-size: 27px;
+        font-kerning: auto;
+        font-family: fantasy;
+        color: mediumseagreen;
+
+      }
+
+      #response {
+        font-family: monospace;
+        font-size: 64px;
+        opacity: 30%;
+        width: 100%;
+        text-align: right;
+      }
+      #firstImage {
+        width: 50%;
+        position: absolute;
+        top: 300px;
+        left: 200px;
+
+      }
+
+
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+      <h1 id="metaphor">
+        the world wibe web is like a with long hair who doesn't treat it well, each strand splitting at its ends
+      </h1>
+
+      <div id="response">
+        <p>(o.o)\\\</p>
+        <div>
+          <p>  o</p>
+          <p>/ | \</p>
+          <p> /  \</p>
+        </div>
+
+      </div>
+
+
+
+      <img alt="Crazy ex girlfriend" src="https://img.memecdn.com/little-did-anyone-realize-overly-attached-girlfriend-has-sever-hair-loss_o_1055513.webp" id="firstImage"/>
+
+
+      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    //starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+     const metaphor = document.getElementById("metaphor");
+     const response = document.getElementById("response");
+     const firstImage = document.getElementById("firstImage");
+     response.addEventListener('click', function() {
+       metaphor.style.fontSize = "80px";
+       response.style.border = "10px dotted mediumpurple";
+       firstImage.style.border = "20px solid sandybrown";
+       firstImage.style.transform = "rotate(-90deg)";
+       let deg = 0
+           setInterval(() => {
+             deg += 30 % 360
+             document.getElementById("firstImage").style.transform = `rotate(${deg}deg)`
+           }, 1000/60)
+
+     });
+    // all javascript above here
+  </script>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      name of webpage
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      /* write all of your cool css styles below this line  */
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* add/change more styles to the body below here */
+        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
+        font-family: monospace;
+        background-color: black;
+        color: hotpink;
+      }
+
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* add/change more styles to the hand coding is fun container below here */
+        border: 2px dotted blue;
+        padding: 20px;
+      }
+
+      #metaphor {
+        font-size: 25px;
+        color: orchid;
+        height: 100px;
+        border: 2px dotted orchid;
+        padding: 10px;
+      }
+
+      #response {
+        background-color: lightsalmon;
+        color: white;
+        padding: 15px;
+        font-size: 15px;
+      }
+
+      #response2 {
+        color: white;
+        padding: 25px;
+        font-size: 50px;
+        text-align: center;
+      }
+
+      #first-image{
+        width:80%;
+        border: 120px solid white;
+        margin: 0 auto;
+        display: block;
+
+      }
+
+      #secretmessage{
+        display:none;
+        font-size: 100px;
+        color: darkgreen;
+
+
+
+      }
+
+      /* write all of your cool css styles above this line  */
+    </style>
+  </head>
+
+  <body>
+    <div class="handcoding-is-fun">
+      <!-- nothing here yet, only write below here -->
+      <h1 id="metaphor">the world wide web is a fishing net dragging accross
+        the ocean catching all of the beautiful dolphins and brilliant fishes
+        but also the gross bottom feeders</h1>
+
+        <div id = "response">
+          <p> Unfortunately this also means that you have to eat this random
+            catch from the ocean, forcing everything in the catch, both tasty
+            and gross, to affect both your physical and mental health in a
+            variety of unforseen positive and negative ways</p>
+        </div>
+
+        <div id = "response2">
+          <p>So what did you fish out of this murky mystical ocean today?</p>
+        </div>
+
+          <img alt="here are some beautiful fish teeth, unflossed" src="http://lazerhorse.files.wordpress.com/2013/03/sheepshead-fish-human-teeth.jpg" id="first-image"/>
+
+          <h2>
+            I like salmon, fish amd chips, shrimps, lobster, octopus sometimes, fish tacos are good, ive never eaten true sushi, even though i like to think of myself as someone that loves food, what does that mean about me? what am i afraid of? is it a fear instilled in me from my favor of raw meats? but its fish , it isnt meat, muscles are weird, clams are kinda gross, i do love oysters though, i live for the shuck, mignonette is a really weird word.
+
+          </h2>
+
+        <blockquote id ="secretmessage">
+          I am a vegetarian...
+        </blockquote>
+
+
+      <!-- only write above here, add more space above this line if necessary -->
+    </div>
+  </body>
+
+  <script type="application/javascript">
+    // starter code below, remove double slashes from lines below to start using, make sure you have html elements with ids
+
+    const metaphor = document.getElementById("metaphor");
+    const response = document.getElementById("response");
+    const firstImage = document.getElementById("first-image");
+    const secret = document.getElementById("secretmessage");
+    response.addEventListener('click', function() {
+      metaphor.style.fontSize = "80px";
+      response.style.border = "10px solid mediumpurple";
+      firstImage.style.transform = "rotate(-5deg)";
+      secret.style.display = "block";
+    });
+
+    // all javascript above here
+  </script>
+</html>

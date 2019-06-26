@@ -1,19 +1,15 @@
-# [hand coding round robin](https://doodybrains.github.io/hand-coding-round-robin/event)
-
-*workshopping a workshop where students will learn how to hand code a web page*
+# [hand coding round robin](https://doodybrains.github.io/hand-coding-round-robin)
 
 ## what is this?
-a one hour workshop where a group of students will learn how to hand code a web page by working on each others computers
+participants of this workshop will learn how to "hand code" a web page by working on each others computers
 
-they will learn how to do this kind of coding slowly and with care.
+the session will start with a brief lecture on the significance of coding slowly and by hand.
 
-equal attention will be given to html elements, css styles, and the content on the page. through adding and styling the content of each others web pages students will learn the basic building blocks of web development as well as what it feels like to code with and for each other.
+participants will learn how to do this kind of coding by example and with care.
 
-[workshop slides are here !](https://doodybrains.github.io/hand-coding-round-robin)
+equal attention will be given to html elements, css styles, and the content on the page.
 
-[html + css syntax references here !](https://doodybrains.github.io/hand-coding-round-robin/reference.html)
-
-[css color reference here !](http://colours.neilorangepeel.com/)
+through adding and styling the content of each others web pages students will learn the basic building blocks of web development as well as what it feels like to code with and for each other.
 
 ## preparation
 _Note: You will need your own computer to participate in this workshop. We will be switching seats and working on each others computers so you should also be comfortable with someone else using your computer. We will only be working within one file in a text editor and it will already be opened by the time another student sits down at your computer._
@@ -22,40 +18,6 @@ _Note: You will need your own computer to participate in this workshop. We will 
 2. Please download this [file](https://drive.google.com/file/d/1JUqr2cCKSKEOw6f9ZaJNthufTx_dDRLo/view?usp=sharing)
 3. Move it to your desktop so that it is easily accessible to you and other students
 
-
-## schedule
-
-`0:00 - 0:05`
-
-introduction to workshop, what is hand coding?, index.html overview
-
-`0:05 - 0:10`
-
-H1 tag, style by id
-
-`0:10 - 0:15`
-
-Move down one seat, P tag inside div tag, style by id
-
-`0:15 - 0:20`
-
-Move down one seat, IMG tag with ID, copy and paste url for image
-
-`0:20 - 0:30`
-
-Move down one seat, Style image by ID
-
-`0:30 - 0:45`
-
-Move down one seat, Freestyle ~ what is the hidden meaning of the web page (feel free to uncomment javascript below)
-
-`0:45 - 0:50`
-
-Return to original seat, final P tag, style by ID
-
-`0:50 - 0:60`
-
-optional sharing, post-workshop notes
 
 ## references
 
@@ -86,12 +48,3 @@ to put your website on the world wide web (for free!) you can follow these guide
 1. tbd
 2. tbd
 3. tbd
-
-#### web pages from saturday mar 2 @ bobst library
-
-[one](https://doodybrains.github.io/hand-coding-round-robin/mar-2-library/max.html) [two](https://doodybrains.github.io/hand-coding-round-robin/mar-2-library/jiwon-shin.html) [three](https://doodybrains.github.io/hand-coding-round-robin/mar-2-library/brendan.html) [four](https://doodybrains.github.io/hand-coding-round-robin/mar-2-library/sukanya.html)
-
-
-#### web pages from saturday feb 23 @ itp with the onions
-
-[one](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/one.html) [two](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/two.html) [three](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/three.html) [four](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/four.html) [five](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/five.html) [six](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/six.html) [seven](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/seven.html) [eight](https://doodybrains.github.io/hand-coding-round-robin/feb-23-onions/eight.html)
