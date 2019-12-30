@@ -18,7 +18,6 @@ _Note: You will need your own computer to participate in this workshop. We will 
 2. Please download this [file](https://drive.google.com/file/d/1JUqr2cCKSKEOw6f9ZaJNthufTx_dDRLo/view?usp=sharing)
 3. Move it to your desktop so that it is easily accessible to you and other students
 
-
 ## references
 
 [J. R. CARPENTER || A Handmade Web](http://luckysoap.com/statements/handmadeweb.html)
@@ -29,22 +28,13 @@ _Note: You will need your own computer to participate in this workshop. We will 
 
 ## post-workshop resources
 
-to put your website on the world wide web (for free!) you can follow these guides:
+to put your website on the world wide web with GitHub you can follow this guide:
 
 `GitHub`
 1. Create a new repository
-2. Click upload new file button
-3. Name the file index.html
-4. Copy and paste the contents of your index.html
-5. Commit the changes directly to master
-6. Enable gh-pages in the Settings tab
-
-`Beaker Browser + Hashbase.io`
-1. Download and install Beaker Browser here
-2. tbd
-3. tbd
-
-`Netlify`
-1. tbd
-2. tbd
-3. tbd
+2. Enable gh-pages in the Settings tab
+3. Click upload new file button
+4. Name the file index.html
+5. Copy and paste the contents of your file (your-name.html) into this new index.html file
+6. Commit the changes directly to master
+7. You should now be able to see your live site at the link provided by gh-page in the Settings tab.
