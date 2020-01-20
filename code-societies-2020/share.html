@@ -83,14 +83,42 @@
         display: block;
         width: 100%;
       }
-
       .images {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        position: relative;
       }
-      .images img {
-        width: 30%;
+      .images.center img {
+        width: 75%;
+        margin: 0 auto;
+      }
+      .images.left img:first-child {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 70%;
+        z-index: 10;
+      }
+      .images.left img:last-child {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        width: 40%;
+        z-index: 15;
+      }
+      .images.right img:first-child {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        left: auto;
+        width: 70%;
+        z-index: 10;
+      }
+      .images.right img:last-child {
+        position: absolute;
+        top: 40%;
+        right: 60%;
+        width: 40%;
+        left: auto;
+        z-index: 15;
       }
     </style>
   </head>
@@ -100,19 +128,30 @@
           <section class="intro">
             <h1>hand coding round robin</h1>
           </section>
-          <section class="images">
-            <img src="teletype.jpg" />
-            <img src="core-rope-weaver.jpg" />
-            <img src="vt100.jpg" />
-
+          <section class="images right">
+            <img src="2-2.jpg" />
+            <img src="2-1.jpg" />
           </section>
-          <section style="background-color: black;">
-            <img style="max-width: 50%;" src="desktop.png" class="note" alt="drawing from not a desktop, not a metaphor" />
+          <section class="images left">
+            <img src="1-1.png" />
+            <img src="1-2.jpg" />
+          </section>
+
+
+          <section class="images right">
+            <img src="4-1.jpg" />
+            <img src="4-2.gif" />
+          </section>
+          <section class="images left">
+            <img src="3-1.png" />
+            <img src="3-2.png" />
           </section>
           <section>
             <div style="padding:56.25% 0 0 0;position:relative; width:100%;"><iframe src="https://player.vimeo.com/video/320834883?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           </section>
-
+          <section class="images center">
+            <img src="5-1.gif" />
+          </section>
 
         </div>
   </body>
