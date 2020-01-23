@@ -132,13 +132,23 @@
         font-size: 1.75em;
         max-width: 65%;
       }
-      section.thank-you { background-color: mediumpurple; max-width: none;}
-      section.thank-you h1 {font-family: "Courier New", Courier, monospace; width: 56%; position: absolute; top: 1%; right: 0; color: chartreuse;}
+      marquee {
+        position: absolute;
+        top: 20%;
+        right: -30%;
+        width: 100%;
+        height: 70px;
+        z-index: 20;
+        transform: rotate(45deg);
+        letter-spacing: 3em;
+      }
+      section.thank-you { background-color: hotpink; max-width: none;}
+      section.thank-you h1 {font-family: "Courier New", Courier, monospace; width: 56%; position: absolute; top: 1%; right: 0; color: yellow;}
       section.thank-you p.shifting {width: 40%; line-height: 3em;position: absolute; bottom: 10%; left: 0;transform: rotate(-10deg); font-size: .675em; letter-spacing: .5em;}
       section.thank-you p.sometimes-it-rains {font-size: 2em; width: 90%; font-family: "Comic Sans MS", cursive, sans-serif;position: absolute; bottom: 50%; left: 10%;transform: rotate(20deg); color: black;}
       section.thank-you .thankyou {width: 40%; position: absolute; top: 90%; right: 0;}
       section.thank-you .cloud {width: 90%; position: absolute; top: 0%; left:-15%; }
-      section.thank-you .spreadsheet {width: 50%; position: absolute; top: 20%; left:10%; opacity: .5; }
+      section.thank-you .spreadsheet {width: 30%; position: absolute; top: 20%; left:10%; opacity: .5; }
       h2:first-of-type {position: absolute; top: 3%; left:3%; font-size: 4em;}
       h2:nth-of-type(2) {position: absolute; top: 39%; right:3%; font-size: 2em;}
 
@@ -189,8 +199,8 @@
             <img class="cloud" src="cloud.png" />
             <img class="spreadsheet" src="spreadsheet.png" />
             <p class="sometimes-it-rains">part of me is inside of an entity like a cloud which is porous and but also full like a student and sometimes it rains</p>
-            <h2>🦠</h2>
-            <h2>🍃</h2>
+            <marquee><h2>🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠🦠</h2></marquee>
+            
           </section>
           <section class="intro">
             <h1>hand coding round robin</h1>
@@ -232,7 +242,7 @@
           </section>
 
           <section class="intro">
-            <h1>another p tag (inside the div tag)</h1>
+            <h1>another p tag (put both inside the div tag)</h1>
             <p>respond in a few sentences to the question or phrase</p>
           </section>
 
@@ -248,14 +258,19 @@
 
           <section class="intro">
             <h1>ul and li tags</h1>
-            <p>create a list of things that the two writings on the page are making you think of, things to remember or look up or things that you are thinking of in the moment</p>
+            <p>Meditate on your time in code societies.<br>
+            What are 10 "things" you've been given during this time by people within (and outside of) SFPC.<br>
+            What feelings did these things give you?<br>
+            Please format as: Thing Given / Feeling(s) Given</p>
           </section>
-
           <section class="intro">
-            <h1>blockquote</h1>
+            <h1>em tag</h1>
             <p>What kinds of spells do we need to protect ourselves from technology that can surveil and harm us? Are there protective rituals that you do or would like to create?</p>
           </section>
-
+          <section class="intro">
+            <h1>blockquote</h1>
+            <p>Please share a quote from class that stood out to you (with attribution if you have it). The quote can be from a teacher, organizer, classmate, cited author, anyone!</p>
+          </section>
           <section class="intro">
             <h1>p tag</h1>
             <p>respond to everything on the page so far. what might the subtext or hidden meaning be? feel free to add a css id or existing class and some styles when you're done</p>
