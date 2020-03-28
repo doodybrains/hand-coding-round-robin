@@ -22,17 +22,15 @@
         margin: 0;
         height: 100vh;
         overflow: hidden;
-        /* add/change more styles to the body below here */
-        /* feel free to change font-family from monospace to sans-serif or serif or any other fonts that you know of Comic Sans MS, Impact, Verdana...etc. */
-        font-family: monospace;
-        background-color: black;
-        color: hotpink;
+        background-color: snow;
+        color: black;
+        text-align: center;
       }
 
       h2 {
         font-size: 3em;
         font-style: italic;
-        color: yellow;
+        color: black;
       }
 
       .handcoding-is-fun {
@@ -40,20 +38,20 @@
         width: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
-        /* add/change more styles to the hand coding is fun container below here */
-        border: 2px dotted blue;
-        padding: 20px;
+        padding: 10px;
       }
 
       pre {
-        font-size: 2em;
-        color: springgreen;
-        padding: 30px;
+        font-size: 1.5em;
+        color: blue;
         margin: 0 auto;
+        text-align: left;
+        max-width: 300px;
       }
 
       pre em {
-        color: cornflowerblue;
+        color: purple;
+        opacity: .5;
       }
 
       code {
@@ -62,14 +60,19 @@
         width: 100%;
         padding: 10px;
         font-size: 1.5em;
+        max-width: 600px;
+        text-align: left;
+        margin: 0 auto;
       }
 
       code span {
-        color: orangered;
+        color: blue;
+        opacity: .7;
       }
 
       code span em {
-        color: chartreuse;
+        color: purple;
+        opacity: .5;
       }
 
       strong {
@@ -80,6 +83,13 @@
         font-size: 1.125em;
       }
 
+      h3 {
+        font-weight: normal;
+        margin: 0;
+        color: brown;
+
+        font-family:  monospace;
+      }
       /* write all of your cool css styles above this line  */
     </style>
   </head>
@@ -89,49 +99,74 @@
       <!-- nothing here yet, only write below here -->
       <h2>html reference</h2>
 
+
         <code>
-          <span>&lt;h1 id="<em>hand-code</em>"&gt;</span>hand coding is so kewl<span>&lt;&sol;h1&gt;</span>
+          <h3>everything in blue is HTML and everything in the purplish-pink color is my own. for example, this is what an opening and closing HTML tag looks like:</h3>
           <br>
           <br>
-          <span>&lt;h2 id="<em>what-i-think</em>" class="<em>what-we-think</em>"&gt;  </span>i love hand coding because it is slow and reminds me of the nineties<span>&lt;&sol;h2&gt;</span>
+          <span>&lt;h1&gt;</span><br><br><span>&lt;&sol;h1&gt;</span><br>
           <br>
           <br>
-          <span>&lt;p id="<em>what-do-u-think</em>" class="<em>what-we-think</em>"&gt; </span>do you think there's room on the world wide web for every person with an internet connection to have their own web page? what if we all kept each other up to date by visiting each other's homepages?<span>&lt;&sol;p&gt;</span>
+          <h3>if i want to add a unique id called "emma's first title" it would look like this:</h3>
           <br>
           <br>
-          <span>&lt;blockquote id="<em>a-quote</em>"&gt;</span>bright, rich, personal, slow and under construction. It was a web of sudden
+          <span>&lt;h1 id="<em>emmas-first-title</em>"&gt;</span><br>hand coding is so kewl<br><span>&lt;&sol;h1&gt;</span><br>
+          <br>
+        </code>
+        <code>
+          <br><br>
+          <h3>more examples:</h3>
+          <br><br>
+          <span>&lt;h1 id="<em>hand-code</em>"&gt;</span><br>hand coding is so kewl<br><span>&lt;&sol;h1&gt;</span><br>
+          <br>
+          <br>
+          <span>&lt;h2 class="<em>what-i-think</em>"&gt;</span><br>i love hand coding because it is slow and reminds me of the nineties<br><span>&lt;&sol;h2&gt;</span><br>
+          <br>
+          <br>
+          <span>&lt;p id="<em>what-do-u-think</em>"&gt;</span><br>do you think there's room on the world wide web for every person with an internet connection to have their own web page? what if we all kept each other up to date by visiting each other's homepages?<br><span>&lt;&sol;p&gt;</span><br>
+          <br>
+          <br>
+          <span>&lt;blockquote id="<em>a-quote</em>"&gt;</span><br>bright, rich, personal, slow and under construction. It was a web of sudden
           connections and personal links. Pages were built on the edge of tomorrow, full of hope
           for a faster connection and a more powerful computer... it was a web of amateurs soon
           to be washed away by dot.com ambitions, professional authoring tools and guidelines
-          designed by usability experts. -Olia Lialina<span>&lt;&sol;blockquote&gt;</span>
+          designed by usability experts. -Olia Lialina<br><span>&lt;&sol;blockquote&gt;</span><br>
           <br>
           <br>
-          <span>&lt;img id="<em>favorite-image</em>" alt="<em>a plate of spaghetti where the meatballs are actually faces of dogs</em>" src="<em>https://d.ibtimes.co.uk/en/full/1447148/spaghetti-meatballs-become-really-frightening.jpg?w=1150&e=50557137809aa4028731a8da96eea8ee</em>"<span>&sol;&gt;</span>
+          <span>&lt;img id="<em>favorite-image</em>" alt="<em>a plate of spaghetti where the meatballs are actually faces of dogs</em>" src="<em>https://d.ibtimes.co.uk/en/full/1447148/spaghetti-meatballs-become-really-frightening.jpg?w=1150&e=50557137809aa4028731a8da96eea8ee</em>"<span>&sol;&gt;</span></span><br>
+
+          <br><br><br>
+          <span>&lt;ul&gt;</span>
+
+          <br>
+            <span>&lt;li&gt;</span>this is an HTML list<span>&lt;&sol;li&gt;</span>
+          <br>
+            <span>&lt;li&gt;</span>each li tag is a single item<span>&lt;&sol;li&gt;</span>
+          <br>
+            <span>&lt;li&gt;</span>list item three<span>&lt;&sol;li&gt;</span>
+          <br>
+            <span>&lt;li&gt;</span>list item four<span>&lt;&sol;li&gt;</span>
+          <br>
+            <span>&lt;li&gt;</span>list item five<span>&lt;&sol;li&gt;</span>
+          <br>
+          <span>&lt;&sol;ul&gt;</span><br>
         </code>
 
       <h2>css reference</h2>
 <pre>
-#name-of-elements-id {<br>
-  <em>thing-you-want-to-change</em>: <em>how-you-want-to-change-it</em>;<br>
-  <em>thing-you-want-to-change</em>: <em>how-you-want-to-change-it</em>;<br>
-}<br>
-
-.name-of-elements-class {<br>
-  <em>thing-you-want-to-change</em>: <em>how-you-want-to-change-it</em>;<br>
-  <em>thing-you-want-to-change</em>: <em>how-you-want-to-change-it</em>;<br>
-}<br>
-
-
-#cool-element {<br>
+#emmas-first-title {<br>
+  <em>font-size</em>: <em>22px</em>;<br>
   <em>width</em>: <em>120px</em>;<br>
   <em>background-color</em>: <em>hotpink</em>;<br>
   <em>position</em>: <em>absolute</em>;<br>
   <em>top</em>: <em>80px</em>;<br>
   <em>left</em>: <em>20px</em>;<br>
-  <em>height</em>: <em>120px</em>;<br>
   <em>padding</em>: <em>30px</em>;<br>
-  <em>border</em>: <em>6px dotted orangered</em>;<br>
-}<br>
+  <em>border</em>: <em>12px dotted orangered</em>;<br>
+  <em>transform</em>: <em>rotate(20deg)</em>;<br>
+  <em>font-family</em>: <em>monospace</em>;<br>
+}
+<br><br>
 </pre>
       <!-- only write above here, add more space above this line if necessary -->
     </div>
