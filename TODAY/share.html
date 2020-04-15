@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      hand coding round robin
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @font-face {
+        font-family: 'apoc';
+        src: url('./fonts/Apoc-Revelations.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family: 'apoc';
+        background-color: black;
+        color: snow;
+        padding:0;
+      }
+      .handcoding-is-fun {
+        height: 100vh;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        font-family: 'apoc';
+      }
+      h1 {
+        font-size: 4em;
+        margin: 0 0 26px 0;
+        font-weight: normal;
+        text-align: center;
+        font-family: 'apoc';
+      }
+      h2 {
+        font-size: 2em;
+        margin: 0 0 26px 0;
+        font-weight: normal;
+        text-align: center;
+        font-family: 'apoc';
+      }
+      p {
+        font-size: 1.5em;
+        margin: 0;
+        font-weight: normal;
+        text-align: center;
+        font-family: 'apoc';
+        color: white;
+      }
+      a {
+        color: inherit;
+      }
+      section {
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+      .images {
+        position: relative;
+      }
+      .images.center img {
+        width: 55%;
+        margin: 0 auto;
+      }
+      .images.left img:first-child {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 30%;
+        z-index: 10;
+      }
+      .images.left img:last-child {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        width: 20%;
+        z-index: 15;
+      }
+      .images.right img:first-child {
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        left: auto;
+        width: 30%;
+        z-index: 10;
+      }
+      .images.right img:last-child {
+        position: absolute;
+        top: 40%;
+        right: 45%;
+        width: 25%;
+        left: auto;
+        z-index: 15;
+      }
+      .images.right.last img:last-child {
+        position: absolute;
+        top: 40%;
+        right: 60%;
+        width: 25%;
+        left: auto;
+        z-index: 15;
+      }
+      .images.three img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      section.intro {
+        max-width: 80%;
+        margin:  0 auto;
+      }
+      section.intro p {
+        font-size: 1.75em;
+        max-width: 65%;
+      }
+
+
+
+      .marquee {
+        position: absolute;
+        top: 20%;
+        right: -30%;
+        transform: rotate(45deg);
+        letter-spacing: 3em;
+        height: 70px;
+        overflow: hidden;
+        z-index: 20;
+        width: 100%;
+      }
+      .marquee:nth-of-type(2)  {
+        top: 0%;
+        left: -40%;
+        right: auto;
+        z-index: 20;
+        transform: rotate(-85deg);
+      }
+      .marquee h2 {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          text-align: center;
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          -moz-animation: scroll-left 4s linear infinite;
+          -webkit-animation: scroll-left 4s linear infinite;
+          animation: scroll-left 40s linear infinite;
+      }
+
+      @-moz-keyframes scroll-left {
+          0% {
+              -moz-transform: translateX(100%);
+          }
+          100% {
+              -moz-transform: translateX(-100%);
+          }
+      }
+
+      @-webkit-keyframes scroll-left {
+          0% {
+              -webkit-transform: translateX(100%);
+          }
+          100% {
+              -webkit-transform: translateX(-100%);
+          }
+      }
+
+      @keyframes scroll-left {
+          0% {
+              -moz-transform: translateX(100%);
+              -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+          }
+          100% {
+              -moz-transform: translateX(-100%);
+              -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+          }
+      }
+
+
+      section.thank-you { background-color: mediumpurple; max-width: none;}
+      section.thank-you h1 {font-family: "Courier New", Courier, monospace; width: 56%; position: absolute; top: 15%; right: 5%; color: white; z-index: 99; transform: rotate(20deg);}
+      section.thank-you p.shifting {color: white; width: 40%;position: absolute; bottom: 10%; left: 0;transform: rotate(-10deg); font-size: 3.675em;}
+      section.thank-you p.sometimes-it-rains {font-size: 2em; width: 90%; font-family: "Comic Sans MS", cursive, sans-serif;position: absolute; bottom: 50%; left: 10%;transform: rotate(20deg); color: black;}
+      section.thank-you .thankyou {width: 25%; position: absolute; top: 90%; right: 0;}
+      section.thank-you .cloud {width: 90%; position: absolute; bottom: -10%; left:-15%; opacity: .7;}
+      section.thank-you .spreadsheet {width: 30%; position: absolute; top: 20%; left:10%; opacity: .5; }
+      h2:first-of-type {position: absolute; top: 3%; left:3%; font-size: 4em;}
+      h2:nth-of-type(2) {position: absolute; top: 39%; right:3%; font-size: 2em;}
+
+      section.thank-you .thankyou:nth-of-type(2) {top: 85%; left: 10%;opacity: .2;}
+      section.thank-you .thankyou:nth-of-type(3) {top: 20%; left: 20%;opacity: .7;}
+      section.thank-you .thankyou:nth-of-type(4) {top: 70%; left: 30%;opacity: .5;}
+      section.thank-you .thankyou:nth-of-type(5) {top: 60%; left: 42%;}
+      section.thank-you .thankyou:nth-of-type(6) {top: 52%; right: 35%;opacity: .7;}
+      section.thank-you .thankyou:nth-of-type(7) {top: 54%; right: 12%;opacity: .5;}
+      section.thank-you .thankyou:nth-of-type(8) {top: 80%; right: 20%;}
+      section.thank-you .thankyou:nth-of-type(9) {top: 68%; left: 30%;}
+      section.thank-you .thankyou:nth-of-type(10) {top: 30%; left: 2%;opacity: .5;}
+      section.thank-you .thankyou:nth-of-type(11) {top: 58%; left: 58%;opacity: .2;}
+      section.thank-you .thankyou:nth-of-type(12) {top: 94%; left: 10%;opacity: .2;}
+      section.thank-you .thankyou:nth-of-type(13) {top: 87%; left: 20%;opacity: .5;}
+      section.thank-you .thankyou:nth-of-type(14) {top: 71%; left: 30%;opacity: .7;}
+      section.thank-you .thankyou:nth-of-type(15) {top: 14%; left: 5%;}
+      section.thank-you .thankyou:nth-of-type(16) {top: 5%; left: -15%;}
+      section.thank-you .thankyou:nth-of-type(17) {top: 2%; left: -5%;opacity: .2;}
+      section.thank-you .thankyou:nth-of-type(18) {top: 10%; left: 10%;}
+    </style>
+  </head>
+      <body>
+        <div class="handcoding-is-fun">
+          <section class="intro thank-you">
+            <h1>I would like to say thank you to all of you on this video call</h1>
+            <p class="shifting">this is going to be fun!</p>
+
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+            <img class="thankyou" src="ty.gif" />
+
+            <img class="cloud" src="cloud.png" />
+
+            <div class="marquee"><h2>🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨</h2></div>
+            <div class="marquee"><h2>🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨🥨</h2></div>
+          </section>
+          <section class="intro">
+            <h1>hand coding round robin</h1>
+          </section>
+          <section class="images right">
+            <img src="1-aa.png" />
+            <img style="width: 50%;"src="1-bb.png" />
+          </section>
+          <section class="images left">
+            <img src="2-aa.jpg" />
+            <img src="2-bb.jpg" />
+          </section>
+          <section class="images right">
+            <img src="3-aa.png" />
+            <img src="3-bb.gif" />
+          </section>
+          <section class="images left">
+            <img src="4-aa.jpg" />
+            <img src="4-bb.jpg" />
+          </section>
+          <section class="images right last">
+            <img src="5-bb.png" />
+            <img src="5-aa.jpg" />
+          </section>
+
+          <section>
+            <div style="padding:56.25% 0 0 0;position:relative; width:100%;"><iframe src="https://player.vimeo.com/video/320834883?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          </section>
+
+          <section class="intro">
+            <h1 style="font-size: 3em;">the rest of this workshop will be a kind of meditation on the current moment, or how you are feeling in this moment. think about something you would like to share with this group. maybe its something resourceful or maybe its something personal ~ it can be in the form of a question or a phrase. it can be something you've been thinking about for a while or something that you're thinking about today. </h1>
+          </section>
+
+          <section class="intro">
+            <h1>p tag</h1>
+            <p>create the opening and closing tag, place your question or phrase inside</p>
+          </section>
+
+          <section class="intro">
+            <h1>another p tag</h1>
+            <p>respond in a few sentences to the question or phrase</p>
+          </section>
+
+          <section class="intro">
+            <h1>class names</h1>
+            <p>add a class name to either p tag on the page</p>
+          </section>
+
+          <section class="intro">
+            <h1>css</h1>
+            <p>notice the name of the class on one of the html tags, scroll up to the &lt;style&gt; section and write your first css style for that class name</p>
+          </section>
+
+          <section class="intro">
+            <h1>ul and li tags</h1>
+            <p>What are three things that you have learned about yourself in the past month?</p>
+          </section>
+
+          <section class="intro">
+            <h1>blockquote</h1>
+            <p>Please share a quote from someone who you think is very wise.</p>
+          </section>
+
+          <section class="intro">
+            <h1>p tag</h1>
+            <p>respond to everything on the page so far. what might the subtext or hidden meaning be? feel free to add a css class and some styles when you're done</p>
+          </section>
+
+          <section class="intro">
+            <h1>links! the a tag</h1>
+            <p>if someone could only go to one website from this page where would they go?</p>
+          </section>
+
+          <section class="intro">
+            <h1>css practice! freestyle html!</h1>
+            <p>find an unstyled element or an element that you would like to add style to! add an html element we havent used yet, practice writing something again! fill in with whatever you want!</p>
+          </section>
+
+          <section class="intro">
+            <h1>h1 tag</h1>
+            <p>what is the title of this page?</p>
+          </section>
+        </div>
+  </body>
+</html>
