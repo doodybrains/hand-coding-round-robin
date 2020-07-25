@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 10px;
 }
 
 iframe {
@@ -27,23 +28,26 @@ h2.handcoding {
 
 .thinking {
   background: black;
+  font-family: monospace;
 }
 
 .hide-the-text-from-view-because-im-going-to-read-it-in-the-browser-inspector {
-  color: black;
+  color: hotpink;
+  font-size: 1.75em;
 }
 
-.show-this {
+.inside-here-are-images {
   display: flex;
   align-items: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
-.show-this iframe,
-.show-this img,
-.show-this video {
+.inside-here-are-images iframe,
+.inside-here-are-images img,
+.inside-here-are-images video {
   display: block;
   width: 100%;
+  max-width: 500px;
   margin: 40px auto 0 auto;
 }
