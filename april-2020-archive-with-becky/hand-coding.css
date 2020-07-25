@@ -1,9 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
 }
-
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 iframe {
-  height: 85vh !important;
+  width: 50% !important;
+  height: 60vh;
   border: none;
 }
 
