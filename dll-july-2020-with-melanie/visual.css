@@ -18,6 +18,9 @@ h1.handcoding {
 a {
 color: black !important;
 }
+a:focus {
+  outline: 0;
+}
 
 h2.handcoding {
   font-size: 2.125em;
