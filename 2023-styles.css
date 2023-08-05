@@ -4,7 +4,7 @@ body {
 }
 
 iframe {
-  height: 85vh !important;
+  height: 45vh !important;
   border: none;
 }
 
@@ -29,38 +29,43 @@ h2.handcoding {
   font-family: monospace;
 }
 
-.thinking {
-  background: black;
+.warmup {
+  background: blue;
   font-family: monospace;
 }
 
 .hide-the-text-from-view-because-im-going-to-read-it-in-the-browser-inspector {
-  color: gold;
-  font-size: 1.75em;
+  color: black;
+width: 100%;
+    overflow: hidden;
+  font-size: 2.75em;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inside-here-are-images {
   display: flex;
   align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+/*
   width: 80%;
   margin: 0 auto 10px auto;
+*/
 }
 
 .inside-here-are-images iframe,
 .inside-here-are-images img,
 .inside-here-are-images video {
   display: block;
-  width: 100%;
-  max-width: 500px;
+    padding: 20px;
+    width: 50%;
+/*
+  width: 80%;
+  max-width: 700px;
   margin: 40px auto 0 auto;
+*/
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-.grid iframe {
-  width: 50% !important;
-  height: 60vh;
-  border: none;
-}
