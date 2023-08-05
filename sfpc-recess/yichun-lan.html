@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <style>
+            body{
+                background-color: rgba(56, 14, 14, 0.939);
+
+            }
+            h2{
+                color:rgb(143, 114, 76);
+                font-size: 35px;
+                font-family: fantasy;
+                background-color:rgb(25, 52, 53);
+                text-align: end;
+                padding-right:44px;
+                padding-top: 15px;
+            }
+
+            h3{
+                color: white;
+                font-size: 20px;
+                text-align: end;
+                font-family: fantasy;
+
+            }
+
+            img {
+                display: block;
+                width: 40%;
+                margin: 40px auto;
+                border: 10px solid rgb(25, 52, 53);
+            }
+            p{
+                color: white;
+            }
+            .parts {
+                color: black;
+                font-style: italic;
+                background-color: rgba(138, 95, 57, 0.582);
+                text-align: center;
+            }
+            ul {
+                list-style: urdu;
+                color: white;
+                padding: 0 24px;
+                height: 150px;
+                display: flex;
+                flex-flow: column wrap;
+                font-family: fantasy;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+    <h1> From Espresso Machine to coffee!</h1>
+    <h2> Espresso Machine </h2>
+    <h3>
+        Espresso is the purest distillation of the coffee bean, the literal essence of a bean.
+        It is a preparation method in which highly-pressurized hot water is forced over coffee grounds to produce a very concentrated coffee drink. The invention of the espresso machine made this accessible to the masses and has since dominated humans' morning routines. 
+
+
+    </h3>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnmInXjs1ZJu7jZ1p7AtPdeJYkQ2TDU2JQgA&usqp=CAU" alt="" />
+
+    <p class="parts">
+        Most auomatic drip coffee maker parts are made of plastic, including the body and basket which hold the filter . The base plate warmer, and heating unit are made out of various metals, usually steel or anodized aluminium. The carafe is made out of heat proof glass.  
+    </p>
+    <p>
+        <strong>Breville Bambino Plus</strong> is conidered the best expresso machine. They manufacture in Australia, China, and the United States. They arent necessessarily a sustainble company but thier plastic that exist within the technology is BPA free.
+    </p>
+
+    <ul id="list">
+        <script>
+            const list = document.getElementById("list");
+            const listItems="espresso bean machine".split(" ");
+            for(let i=0;i<10;i++) {
+                const li = document.createElement("li");
+                li.innerText = listItems[Math.min(Math.floor(Math.random()* listItems.length),listItems.length)];
+                list.appendChild(li);
+            }
+        </script>
+    </ul>
+    <a href="anna-lin.html">go to the next page</a>
+    
+    </body>
+
+
+</html>
